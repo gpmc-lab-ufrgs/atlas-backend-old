@@ -9,6 +9,11 @@ class State(models.Model):
         primary_key=True
     )
     
+    type = models.CharField(
+        max_length=255, 
+        default="Feature"
+    )
+    
     geometry = models.MultiPolygonField(
         default=None,
         blank=True

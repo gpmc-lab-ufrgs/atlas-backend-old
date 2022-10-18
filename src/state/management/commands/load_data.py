@@ -25,6 +25,8 @@ class Command(BaseCommand):
             data = json.load(file)
             for feature in data['features']:
         
+                geo_type = feature['type']
+                
                 geo_id = feature['properties']["CD_UF"]
                 geo_population = feature['properties']["POPULATION"]
                 geo_name = feature['properties']["NM_UF"]
@@ -47,7 +49,10 @@ class Command(BaseCommand):
                 
                 State.objects.create(
                     name=geo_name,
+                    type=geo_type,
                     geometry=GEOSGeometry(geom),
                     properties=properties
                 )
+                
+        self.stdout.write(self.style.SUCCESS('Data loaded :D'))
                 
