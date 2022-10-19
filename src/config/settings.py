@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+import os
 
 from pathlib import Path
 
@@ -46,6 +47,8 @@ THIRD_PARTY_APPS = [
 
 APPLICATION_APPS = [
     'state',
+    'district',
+    'district_property',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS + THIRD_PARTY_APPS
@@ -83,12 +86,14 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+POSTGRES_DB = os.getenv("POSTGRES_DB", "atlas_db")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "ana")
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'atlas_db',
-        'USER': 'leonardogomes',
+        "NAME": POSTGRES_DB,
+        "USER": POSTGRES_USER,
     },
 }
 
