@@ -10,6 +10,6 @@ class DistrictViewSet(viewsets.ModelViewSet):
         sigla = self.request.query_params.get('sigla')
         queryset = District.objects.all()
         if sigla is not None:
-            queryset = queryset.filter(properties__SIGLA_UF=sigla)
+            queryset = queryset.filter(SIGLA_UF=sigla)
         return queryset
     

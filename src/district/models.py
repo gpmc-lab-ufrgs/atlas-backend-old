@@ -1,7 +1,5 @@
 from django.contrib.gis.db import models
 
-from district_property.models import DistrictProperty
-
 class District(models.Model):
     name = models.CharField(
         max_length=255, 
@@ -18,10 +16,31 @@ class District(models.Model):
         blank=True
     )
     
-    properties = models.ForeignKey(
-        DistrictProperty, 
-        on_delete=models.CASCADE, 
-        default=None
+    CD_MUN = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    NM_MUN = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    SIGLA_UF = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    AREA_KM2 = models.IntegerField(
+        default=None, 
+        null=True, 
+        blank=True,
     )
     
     def __str__(self):

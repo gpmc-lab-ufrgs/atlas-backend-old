@@ -47,7 +47,6 @@ THIRD_PARTY_APPS = [
 
 APPLICATION_APPS = [
     'state',
-    'district_property',
     'district',
 ]
 

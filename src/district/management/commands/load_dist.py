@@ -1,5 +1,4 @@
 from district.models import District
-from district_property.models import DistrictProperty
 
 import os
 import json
@@ -42,18 +41,14 @@ class Command(BaseCommand):
                         
                     geom = GEOSGeometry(str(feature['geometry']))
                     
-                    properties = DistrictProperty.objects.create(
-                        CD_MUN= geo_id,
-                        NM_MUN= geo_name,
-                        SIGLA_UF= geo_code,
-                        AREA_KM2= geo_region 
-                    )
-                    
                     District.objects.create(
                         name=geo_name,
                         type=geo_type,
-                        geometry=GEOSGeometry(geom),
-                        properties=properties
+                        geometry=geom,
+                        CD_MUN= geo_id,
+                        NM_MUN= geo_name,
+                        SIGLA_UF= geo_code,
+                        AREA_KM2= geo_region
                     )
             
             self.stdout.write(self.style.HTTP_SUCCESS('"%s" loaded' % file_path))
