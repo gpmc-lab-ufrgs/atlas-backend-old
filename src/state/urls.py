@@ -5,7 +5,7 @@ from .views import StateViewSet
 
 router = routers.DefaultRouter()
 
-router.register("state", StateViewSet)
+router.register("geojson", StateViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
