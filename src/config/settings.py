@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 POSTGRES_DB = os.getenv("POSTGRES_DB", "atlas_db")
-POSTGRES_USER = os.getenv("POSTGRES_USER", "leonardogomes")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "ana")
 
 DATABASES = {
     'default': {
