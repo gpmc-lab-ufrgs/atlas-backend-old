@@ -37,12 +37,16 @@ DJANGO_APPS = [
     'django.contrib.gis',
 ]
 
+THIRD_PARTY_APPS = [
+    'rest_framework',
+]
+
 APPLICATION_APPS = [
     'state_property',
     'state',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS
+INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
