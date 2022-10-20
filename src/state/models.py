@@ -3,8 +3,7 @@ from django.contrib.gis.db import models
 class State(models.Model):
     name = models.CharField(
         max_length=255, 
-        default="state",
-        primary_key=True
+        default="state"
     )
     
     type = models.CharField(

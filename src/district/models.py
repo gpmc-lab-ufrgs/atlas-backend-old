@@ -3,8 +3,6 @@ from django.contrib.gis.db import models
 from district_property.models import DistrictProperty
 
 class District(models.Model):
-    id = models.AutoField(primary_key=True)
-    
     name = models.CharField(
         max_length=255, 
         default="district",
