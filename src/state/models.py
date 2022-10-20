@@ -1,7 +1,5 @@
 from django.contrib.gis.db import models
 
-from state_property.models import StateProperty
-
 class State(models.Model):
     name = models.CharField(
         max_length=255, 
@@ -19,10 +17,38 @@ class State(models.Model):
         blank=True
     )
     
-    properties = models.ForeignKey(
-        StateProperty, 
-        on_delete=models.CASCADE, 
-        default=None
+    CD_UF = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    POPULATION = models.IntegerField(
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    NM_UF = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    SIGLA_UF = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
+    )
+    
+    NM_REGIAO = models.CharField(
+        max_length=255, 
+        default=None, 
+        null=True, 
+        blank=True,
     )
     
     def __str__(self):

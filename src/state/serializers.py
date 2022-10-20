@@ -1,16 +1,17 @@
-from rest_framework import serializers
+from rest_framework_gis import serializers
 
-from state_property.serializers import StatePropertiesSerializer
 
 from .models import State
 
-class StateSerializer(serializers.ModelSerializer):
-    properties =  StatePropertiesSerializer(read_only=True)
+class StateSerializer(serializers.GeoFeatureModelSerializer):
     
     class Meta:
         model = State
+        geo_field = 'geometry'
         fields = [
-            "type",
-            "geometry",
-            "properties",
+            "CD_UF",
+            "POPULATION",
+            "NM_UF",
+            "SIGLA_UF",
+            "NM_REGIAO"
         ]

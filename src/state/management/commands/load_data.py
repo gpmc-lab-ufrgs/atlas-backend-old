@@ -1,5 +1,4 @@
 from state.models import State
-from state_property.models import StateProperty
 
 import os
 import json
@@ -39,19 +38,15 @@ class Command(BaseCommand):
                     
                 geom = GEOSGeometry(str(feature['geometry']))
                 
-                properties = StateProperty.objects.create(
+                State.objects.create(
+                    name=geo_name,
+                    type=geo_type,
+                    geometry=geom,
                     CD_UF= geo_id,
                     POPULATION= geo_population,
                     NM_UF= geo_name,
                     SIGLA_UF= geo_code,
                     NM_REGIAO= geo_region 
-                )
-                
-                State.objects.create(
-                    name=geo_name,
-                    type=geo_type,
-                    geometry=GEOSGeometry(geom),
-                    properties=properties
                 )
                 
         self.stdout.write(self.style.SUCCESS('Data loaded :D'))
