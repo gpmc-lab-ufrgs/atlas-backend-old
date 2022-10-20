@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("geojson/", include("state.urls")),
+    path("state/", include("state.urls")),
+    path("district/", include("district.urls")),
 ]
