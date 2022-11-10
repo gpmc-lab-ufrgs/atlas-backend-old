@@ -6,7 +6,7 @@
     "Label": "PIB Estadual a preços constantes",
     "Unit": "M",
     "Format": "INT",
-    "Classification": "E"
+    "Classification": "Ec"
   },
   {
     "Agency": "IBGE",
@@ -15,7 +15,7 @@
     "Label": "Números de Municípios",
     "Unit": "N",
     "Format": "INT",
-    "Classification": "D"
+    "Classification": "De"
   },
   {
     "Agency": "IBGE",
@@ -24,7 +24,7 @@
     "Label": "População residente - total",
     "Unit": "N",
     "Format": "INT",
-    "Classification": "D"
+    "Classification": "De"
   },
   {
     "Agency": "IBGE",
@@ -33,7 +33,7 @@
     "Label": "População economicamente ativa (PEA)",
     "Unit": "N",
     "Format": "INT",
-    "Classification": "E"
+    "Classification": "Ec"
   },
   {
     "Agency": "IBGE",
@@ -42,6 +42,6 @@
     "Label": "Área Geográfica",
     "Unit": "D",
     "Format": "INT",
-    "Classification": "D"
+    "Classification": "De"
   }
 ]

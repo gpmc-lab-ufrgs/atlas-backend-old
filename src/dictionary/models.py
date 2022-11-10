@@ -17,21 +17,32 @@ class Dictionary(models.Model):
     )
     
     class FormatOptions(models.TextChoices):
-        INT = "INT", _("INT")
-        FLOAT2 = "FT2", _("FLOAT2")
+        INT = "INT"
+        FLOAT2 = "FLOAT2"
+        GRAPHIC = "GRAPHIC"
+        PROGRESS_BAR = "PROGRESS_BAR"
+        STRING = "STRING"
         
     format = models.CharField(
-        max_length=3,
+        max_length=12,
         choices=FormatOptions.choices,
         default=FormatOptions.INT,
     ) 
     
     class ClassificationOptions(models.TextChoices):
-        ECONOMY = "E", _("Econômica")
-        DEMOGRAPHIC = "D", _("Demográfica")
+        HEALTH = "Sa", _("Saúde")
+        EDUCATION = "Ed", _("Educação")
+        ECONOMY = "Ec", _("Economia")
+        MOBILITY = "Mo", _("Mobilidade")
+        DEMOGRAPHIC = "De", _("Demografia")
+        ENVIRONMENT = "Me", _("Meio Ambiente")
+        URBANISM = "Ur", _("Urbanismo")
+        SECURITY = "Se", _("Segurança")
+        ENTREPRENEURSHIP = "Em", _("Empreendedorismo")
+        TECNOLOGY = "Te", _("Tecnologia")
         
     classification = models.CharField(
-        max_length=1,
+        max_length=2,
         choices=ClassificationOptions.choices,
         default=ClassificationOptions.ECONOMY,
     )
@@ -53,9 +64,14 @@ class Dictionary(models.Model):
         MONEY = "M", _("Money")
         NUMBER = "N", _("Number")
         DISTANCE = "D", _("Distance")
+        PORCENTAGE = "P", _("Porcentage")
+        SQUARE_KILOMETERS = "K2", _("Square Kilometers")
+        WAGES = "W", _("Wages")
+        INHABITANT_KILOMETERS = "H", _("InhabitantKilometers")
+        MBPS = "MB", _("MBPS")
        
     unit = models.CharField(
-        max_length=1,
+        max_length=2,
         choices=UnitOptions.choices,
         default=UnitOptions.NUMBER,
     )
