@@ -1,0 +1,3697 @@
+[
+  {
+    "Agency": "GeoSES",
+    "Name": "observed",
+    "Description": "Número de mortes observadas por causas evitáveis de 5 a 74 anos (2013 a 2017)",
+    "Label": "Número de mortes observadas por causas evitáveis",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "expected",
+    "Description": "Número de mortes esperadas para a distribuição da população de acordo com sexo e grupos de idade",
+    "Label": "Número de mortes esperadas",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "rr_prev",
+    "Description": "Risco relativo de mortalidade por causas evitáveis de 5 a 74 anos por padronização indireta por sexo e idade",
+    "Label": "Risco relativo de mortalidade por causas evitáveis",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "hdi_educ",
+    "Description": "Índice de Desenvolvimento Humano, dimensão educacional",
+    "Label": "Índice de Desenvolvimento Humano, dimensão educacional",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "hdi_long",
+    "Description": "Índice de Desenvolvimento Humano, dimensão da longevidade",
+    "Label": "Índice de Desenvolvimento Humano, dimensão longevidade",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "hdi_inc",
+    "Description": "Índice de Desenvolvimento Humano, dimensão de renda",
+    "Label": "Índice de Desenvolvimento Humano, dimensão de renda",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_ses",
+    "Description": "Índice socioeconômico proposto, variando de -1 a +1 (das piores às melhores condições)",
+    "Label": "Índice socioeconômico",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_sed",
+    "Description": "Dimensão de educação (%)",
+    "Label": "Dimensão de educação",
+    "Unit": "P",
+    "Format": "FLOAT2",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_spv",
+    "Description": "Dimensão da pobreza (%)",
+    "Label": "Dimensão da pobreza",
+    "Unit": "P",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_sdp",
+    "Description": "Dimensão de privação (%)",
+    "Label": "Dimensão de privação",
+    "Unit": "P",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_swl",
+    "Description": "Dimensão de riqueza (%)",
+    "Label": "Dimensão de riqueza",
+    "Unit": "P",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_sin",
+    "Description": "Dimensão da renda (em reais; 1 dólar americano = 1,76 reais em 2010)",
+    "Label": "Dimensão da renda",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "GeoSES",
+    "Name": "geo_se_ssg",
+    "Description": "Dimensão de segregação por raça e renda (Índice de Concentração nos Extremos, variando de -1 a +1)",
+    "Label": "Dimensão de segregação por raça e renda",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Mobilidados",
+    "Name": "frota_2020",
+    "Description": "Frota de automóveis, caminhonetes, camionetas, motocicletas, motonetas e utilitários no ano 2020",
+    "Label": "Frota de veículos (2020)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "Mobilidados",
+    "Name": "frota_2021",
+    "Description": "Frota de automóveis, caminhonetes, camionetas, motocicletas, motonetas e utilitários no ano 2021",
+    "Label": "Frota de veículos (2021)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "area_da_unidade_territorial_2021",
+    "Description": "Área Territorial Brasileira km² (2020)",
+    "Label": "Área territorial",
+    "Unit": "K2",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_estimada_2017",
+    "Description": "População estimada - pessoas (2017)",
+    "Label": "População Estimada",
+    "Unit": "N",
+    "Format": "GRAPHIC",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_estimada_2018",
+    "Description": "População estimada - pessoas (2018)",
+    "Label": "População Estimada",
+    "Unit": "N",
+    "Format": "GRAPHIC",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_estimada_2019",
+    "Description": "População estimada - pessoas (2019)",
+    "Label": "População Estimada",
+    "Unit": "N",
+    "Format": "GRAPHIC",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_estimada_2020",
+    "Description": "População estimada - pessoas (2020)",
+    "Label": "População Estimada",
+    "Unit": "N",
+    "Format": "GRAPHIC",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_estimada_2021",
+    "Description": "População estimada - pessoas (2021)",
+    "Label": "População Estimada",
+    "Unit": "N",
+    "Format": "GRAPHIC",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "densidade_demografica_2010",
+    "Description": "Densidade demográfica - hab/km² (2010)",
+    "Label": "Densidade demográfica",
+    "Unit": "H",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "taxa_de_escolarizacao_de_6_a_14_anos_de_idade_2010",
+    "Description": "Escolarização de 6 a 14 anos - % (2010)",
+    "Label": "Escolarização de 6 a 14 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "idhm_indice_de_desenvolvimento_humano_municipal_2010",
+    "Description": "IDHM - Índice de desenvolvimento humano municipal (2010)",
+    "Label": "Índice de Desenvolvimento Humano (IDH)",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "mortalidade_infantil_2019",
+    "Description": "Mortalidade infantil - óbitos por mil nascidos vivos (2019)",
+    "Label": "Mortalidade infantil",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "total_de_receitas_realizadas_2017",
+    "Description": "Receitas realizadas - R$  (2017)",
+    "Label": "Receitas",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "despesas_empenhadas",
+    "Description": "Despesas empenhadas - R$ (2017)",
+    "Label": "Despesas",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "pib_per_capita_2019",
+    "Description": "PIB per capita - R$ (2018)",
+    "Label": "PIB per capita",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_no_ultimo_censo_2010",
+    "Description": "População no último censo (2010)",
+    "Label": "População",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "popm_2010",
+    "Description": "População Masculina",
+    "Label": "População Masculina",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "De",
+    "ID": "Populacao_no_ultimo_censo(2010)"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "popf_2010",
+    "Description": "População Feminina",
+    "Label": "População Feminina",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "De",
+    "ID": "Populacao_no_ultimo_censo(2010)"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "salario_medio_mensal_dos_trabalhadores_formais_2019",
+    "Description": "Salário médio mensal dos trabalhadores formais (2019)",
+    "Label": "Salário médio mensal",
+    "Unit": "W",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "pessoal_ocupado_2019",
+    "Description": "Número de pessoas empregadas no município (2019)",
+    "Label": "Pessoas empregadas",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "populacao_ocupada_2019",
+    "Description": "Porcentagem da população empregada (2019)",
+    "Label": "Percentual da população empregada",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "ideb_anos_iniciais_do_ensino_fundamental_2015",
+    "Description": "Índice de Desenvolvimento da Educação Básica - Anos iniciais do ensino fundamental (2010)",
+    "Label": "IDEB anos iniciais do ensino fundamental",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "ideb_anos_finais_do_ensino_fundamental_2015",
+    "Description": "Índice de Desenvolvimento da Educação Básica - Anos iniciais do ensino médio (2010)",
+    "Label": "IDEB anos finais do ensino fundamental",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "matriculas_no_ensino_fundamental_2020",
+    "Description": "Matrículas no ensino fundamental (2020)",
+    "Label": "Matriculas no ensino fundamental",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "matriculas_no_ensino_medio_2020",
+    "Description": "Matrículas no ensino médio (2020)",
+    "Label": "Matrículas no ensino médio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "docentes_no_ensino_fundamental_2020",
+    "Description": "Docentes no ensino fundamental (2020)",
+    "Label": "Docentes no ensino fundamental",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "docentes_no_ensino_medio_2020",
+    "Description": "Docentes no ensino médio (2020)",
+    "Label": "Docentes no ensino médio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "numero_de_estabelecimentos_de_ensino_fundamental_2020",
+    "Description": "Número de escolas de ensino fundamental (2020)",
+    "Label": "Escolas de ensino fundamental",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "numero_de_estabelecimentos_de_ensino_medio_2020",
+    "Description": "Número de escolas de ensino médio (2020)",
+    "Label": "Escolas de ensino médio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "internacoes_por_diarreia_2016",
+    "Description": "Número de internações por diarréia (2016)",
+    "Label": "Internações por diarréia",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "estabelecimentos_de_saude_sus_2009",
+    "Description": "Estabelecimentos de saúde do SUS (2009)",
+    "Label": "Estabelecimentos de saúde (SUS)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "esgotamento_sanitario_adequado_2020",
+    "Description": "[População total residente nos domicílios particulares permanentes com esgotamento sanitário do tipo rede geral e fossa séptica / População total residente nos domicílios particulares permanentes] x 100 (2020)",
+    "Label": "Esgotamento sanitário adequado",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Me"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "arborizacao_de_vias_publicas_2010",
+    "Description": "[Domicílios urbanos em face de quadra com arborização/domicílios urbanos totais] x100 (2020)",
+    "Label": "Arborização de vias públicas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Me"
+  },
+  {
+    "Agency": "IBGE - cidades",
+    "Name": "urbanizacao_de_vias_publicas_2010",
+    "Description": "[Domicílios urbanos em face de quadra com boca de lobo e pavimentação e meio-fio e calçada/domicílios urbanos totais] x 100 (2020)",
+    "Label": "Urbanização de vias públicas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidt_2019",
+    "Description": "Número de vítimas por acidentes de trânsito. (2019)",
+    "Label": "Óbitos causados por acidentes de trânsito (2019)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidtf_2019",
+    "Description": "Número de vítimas por acidentes de trânsito do sexo feminino (2019)",
+    "Label": "Obitos em acidente de trânsito do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "ACIDT(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidtfj_2019",
+    "Description": "Número de vítimas por acidentes de trânsito de jovens de 15 a 29 anos, do sexo feminino. (2019)",
+    "Label": "Óbitos em acidente de trânsito de jovens do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "ACIDT(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidtj_2019",
+    "Description": "Número de vítimas por acidentes de trânsito de jovens de 15 a 29 anos. (2019)",
+    "Label": "Óbitos em acidente de trânsito de jovens",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "ACIDT(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidtm_2019",
+    "Description": "Número de vítimas por acidentes de trânsito do sexo masculino (2019)",
+    "Label": "Óbitos em acidente de trânsito do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "ACIDT(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "acidtmj_2019",
+    "Description": "Número de vítimas por acidentes de trânsito. Números referentes a jovens de 15 a 29 anos, do sexo masculino. (2019)",
+    "Label": "Óbitos em acidente de trânsito de jovens do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "ACIDT(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homic_2019",
+    "Description": "Número de vítimas por homicídio. (2019)",
+    "Label": "Óbitos por homicídio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homicf_2019",
+    "Description": "Número de vítimas por homicídio do sexo feminino. (2019)",
+    "Label": "Homicídios do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "HOMIC(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homicfj_2019",
+    "Description": "Número de vítimas por homicídio de jovens de 15 a 29 anos, do sexo feminino. (2019)",
+    "Label": "Homicídios de jovens do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "HOMIC(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homicj_2019",
+    "Description": "Número de vítimas por homicídio de jovens de 15 a 29 anos. (2019)",
+    "Label": "Homicídios de jovens",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "HOMIC(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homicm_2019",
+    "Description": "Número de vítimas por homicídio do sexo masculino. (2019)",
+    "Label": "Homicídios do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "HOMIC(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "homicmj_2019",
+    "Description": "Número de vítimas por homicídio de jovens de 15 a 29 anos, do sexo masculino.  (2019)",
+    "Label": "Homicídios de jovens do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Se",
+    "ID": "HOMIC(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicid_2019",
+    "Description": "Óbitos por suicídio (2019)",
+    "Label": "Óbitos por suicídio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicidf_2019",
+    "Description": "Número de vítimas por suicídio do sexo feminino.  (2019)",
+    "Label": "Suicídios do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "SUICID(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicidfj_2019",
+    "Description": "Número de vítimas por suicídio de jovens de 15 a 29 anos, do sexo feminino.  (2019)",
+    "Label": "Suicídios de jovens do sexo feminino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "SUICID(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicidj_2019",
+    "Description": "Número de vítimas por suicídio de jovens de 15 a 29 anos. (2019)",
+    "Label": "Suicídios de jovens",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "SUICID(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicidm_2019",
+    "Description": "Número de vítimas por suicídio do sexo masculino. (2019)",
+    "Label": "Suicídios do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "SUICID(2019)"
+  },
+  {
+    "Agency": "DATASUS",
+    "Name": "suicidmj_2019",
+    "Description": "Número de vítimas por suicídio de jovens de 15 a 29 anos, do sexo masculino. (2019)",
+    "Label": "Suicídios de jovens do sexo masculino",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "SUICID(2019)"
+  },
+  {
+    "Agency": "IPEA",
+    "Name": "iptuch_2019",
+    "Description": "Destina-se ao registro dos valores do tributo que tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona urbana do município, fixada em lei municipal. (2019)",
+    "Label": "IPTU",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IPEA",
+    "Name": "distcapu_1998",
+    "Description": "Distância à capital estadual para os municípios da divisão político administrativa vigente em 2000 (1998)",
+    "Label": "Distância à capital estadual para os municípios",
+    "Unit": "D",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "agencias_2020",
+    "Description": "Número de agências bancárias (2019)",
+    "Label": "Número de agências bancárias",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "aplicacoes_2020",
+    "Description": "Valor corresponde a conta Operações de Crédito (2019)",
+    "Label": "Operações de crédito",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "poupanca_2020",
+    "Description": "Valor corresponde a conta Depósitos de Poupança (2019)",
+    "Label": "Depósitos de Poupança",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ncreat_2020",
+    "Description": "O crédito rural são suprimentos de recursos financeiros, por instituições do Sistema Nacional de Crédito Rural (SNCR), para aplicação exclusiva nas finalidades e condições estabelecidas no Manual de Crédito Rural (MCR). Ele pode ser classificado em dois tipos de atividades (agrícola e pecuária) e três tipos de finalidade (custeio, investimento e comercialização).  Esse indicador se refere ao total de contratos de crédito rural destinados para o custeio das despesas do ciclo produtivo agrícola (2019)",
+    "Label": "Total de contratos de crédito rural",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ninves_2020",
+    "Description": "Esse indicador se refere ao total de contratos de crédito rural destinados para o investimento (2019)",
+    "Label": "Investimento",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ncusgi_2020",
+    "Description": "Esse indicador se refere ao total de contratos de crédito rural destinados para o investimentos em bens e serviços cujo aproveitamento se estenda por vários ciclos produtivos pecuários (2019)",
+    "Label": "Custeio",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ncomer_2020",
+    "Description": "Esse indicador apresenta o total de contratos de crédito rural destinados para o custeio das despesas do ciclo produtivo pecuário (2019)",
+    "Label": "Comercialização",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ninvpc_2020",
+    "Description": "Esse indicador se refere ao total de contratos de crédito rural destinados para o investimentos em bens e serviços cujo aproveitamento se estenda por vários ciclos produtivos pecuários (2019)",
+    "Label": "Investimento - pecuária",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ncuspc_2020",
+    "Description": "Esse indicador se refere ao total de contratos de crédito rural destinados para o custeio das despesas do ciclo produtivo pecuário (2019)",
+    "Label": "Custeio - pecuária",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "ncompc_2020",
+    "Description": "Esse indicador se refere ao total de contratos de crédito rural destinados para o investimentos em bens e serviços cujo aproveitamento se estenda por vários ciclos produtivos agrícolas (2019)",
+    "Label": "Comercialização - pecuária",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "NCREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "creat_2020",
+    "Description": "O crédito rural são suprimentos de recursos financeiros, por instituições do Sistema Nacional de Crédito Rural (SNCR), para aplicação exclusiva nas finalidades e condições estabelecidas no Manual de Crédito Rural (MCR). Ele pode ser classificado em dois tipos de atividades (agrícola e pecuária) e três tipos de finalidade (custeio, investimento e comercialização). Esse indicador é referente à agregação do saldo contábil das operações de crédito rural (inclui custeio, investimento e comercialização do ciclo produtivo), realizadas pelas agências das instituições financeiras do município ao 31 de dezembro (2020)",
+    "Label": "Estoque de crédito rural",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "invest_2020",
+    "Description": "Esse indicador apresenta o valor referente à agregação do saldo contábil das operações de crédito rural para investimento (bens e serviços cujo aproveitamento se estenda por vários ciclos produtivos), realizado pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Investimento",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "cusgio_2020",
+    "Description": "Esse indicador é referente à agregação do saldo contábil das operações de crédito rural para custeio das despesas do ciclo produtivo, realizadas pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Custeio",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "comerc_2020",
+    "Description": "Esse indicador é referente à agregação do saldo contábil das operações de crédito rural para a comercialização da produção, realizado pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Comercialização",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "invpec_2020",
+    "Description": "Esse indicador apresenta o valor referente à agregação do saldo contábil das operações de crédito rural para investimento da produção pecuária (bens e serviços cujo aproveitamento se estenda por vários ciclos produtivos), realizado pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Investimento - pecuária",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "cuspec_2020",
+    "Description": "Esse indicador apresenta o valor referente à agregação do saldo contábil das operações de crédito rural para custeio das despesas do ciclo produtivo pecuário, realizadas pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Custeio - pecuária",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Banco Central do Brasil",
+    "Name": "compec_2020",
+    "Description": "Esse indicador apresenta o valor referente à agregação do saldo contábil das operações de crédito rural para a comercialização da produção pecuária, realizado pelas agências das instituições financeiras do município ao 31 de dezembro (2019)",
+    "Label": "Comercialização - pecuária",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "CREAT(2020)"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "bpc_idos_2013",
+    "Description": "O Benefício de Prestação Continuada e Assistência Social (BPC) é uma transferência mensal de um salário mínimo a pessoa com deficiência ou idosa (65 anos ou mais) que tenha, em ambos os casos, renda familiar per capita menor que 1/4 do salário mínimo. Esta série apresenta o número de transferências do BPC somente para idosos em dezembro de cada ano (2013)",
+    "Label": "BPC para idosos - número de benefícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "bpcval_defi_2013",
+    "Description": "O Benefício de Prestação Continuada e Assistência Social (BPC) é uma transferência mensal de um salário mínimo a pessoa com deficiência ou idosa (65 anos ou mais) que tenha, em ambos os casos, renda familiar per capita menor que 1/4 do salário mínimo. Esta série apresenta o valor nominal total das transferências do BPC somente para deficientes em dezembro de cada ano (2013)",
+    "Label": "BPC para deficientes - valor total dos benefícios",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "bpcval_idos_2013",
+    "Description": "O Benefício de Prestação Continuada e Assistência Social (BPC) é uma transferência mensal de um salário mínimo a pessoa com deficiência ou idosa (65 anos ou mais) que tenha, em ambos os casos, renda familiar per capita menor que 1/4 do salário mínimo. Esta série apresenta o valor nominal total das transferências do BPC somente para idosos em dezembro de cada ano (2013)",
+    "Label": "BPC para idosos - valor total dos benefícios",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "rmv_defi_2013",
+    "Description": "A Renda Mensal Vitalícia (RMV), criada em 1974, é a transferência mensal de um salário mínimo a pessoas carentes idosas ou inválidas com pelo menos 12 meses de contribuição previdenciária. Desde 1996, a RMV vem sendo progressivamente substituída pelo Benefício de Prestação Continuada e Assistência Social (BPC), que independe de qualquer contribuição, mas as transferências a pessoas que já eram beneficiárias antes de 1996 continuam sendo registradas como RMV. Esta série apresenta o número de transferências da RMV somente para deficientes em dezembro de cada ano (2013)",
+    "Label": "RMV para deficientes - número de benefícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "rmv_idos_2013",
+    "Description": "A Renda Mensal Vitalícia (RMV), criada em 1974, é a transferência mensal de um salário mínimo a pessoas carentes idosas ou inválidas com pelo menos 12 meses de contribuição previdenciária. Desde 1996, a RMV vem sendo progressivamente substituída pelo Benefício de Prestação Continuada e Assistência Social (BPC), que independe de qualquer contribuição, mas as transferências a pessoas que já eram beneficiárias antes de 1996 continuam sendo registradas como RMV. Esta série apresenta o número de transferências da RMV somente para idosos em dezembro de cada ano (2013)",
+    "Label": "RMV para idosos - número de benefícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "rmvval_defi_2013",
+    "Description": "A Renda Mensal Vitalícia (RMV), criada em 1974, é a transferência mensal de um salário mínimo a pessoas carentes idosas ou inválidas com pelo menos 12 meses de contribuição previdenciária. Desde 1996, a RMV vem sendo progressivamente substituída pelo Benefício de Prestação Continuada e Assistência Social (BPC), que independe de qualquer contribuição, mas as transferências a pessoas que já eram beneficiárias antes de 1996 continuam sendo registradas como RMV. Esta série apresenta o valor nominal total das transferências da RMV somente para deficientes em dezembro de cada ano (2013)",
+    "Label": "RMV para deficientes - valor total dos benefícios",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "rmvval_idos_2013",
+    "Description": "A Renda Mensal Vitalícia (RMV), criada em 1974, é a transferência mensal de um salário mínimo a pessoas carentes idosas ou inválidas com pelo menos 12 meses de contribuição previdenciária. Desde 1996, a RMV vem sendo progressivamente substituída pelo Benefício de Prestação Continuada e Assistência Social (BPC), que independe de qualquer contribuição, mas as transferências a pessoas que já eram beneficiárias antes de 1996 continuam sendo registradas como RMV. Esta série apresenta o valor nominal total das transferências da RMV somente para idosos em dezembro de cada ano (2013)",
+    "Label": "RMV para idosos - valor total dos benefícios",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "val_pbf_2016",
+    "Description": "O Bolsa Família é um programa de transferência de renda com condicionalidades, focalizado em famílias pobres cadastradas em cada município do país. Resultante da unificação de diferentes programas, foi instituído por lei em 2004. O valor do benefício, reajustável por decreto, varia conforme a renda domiciliar per capita da família, o número e a idade dos filhos. Esta série apresenta o valor nominal total das transferências do programa em dezembro de cada ano (2016)",
+    "Label": "Programa Bolsa Família - valor total dos benefícios",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "Ministério do Desenvolvimento Social",
+    "Name": "fam_pbf_2016",
+    "Description": "O Bolsa Família é um programa de transferência de renda com condicionalidades, focalizado em famílias pobres cadastradas em cada município do país. Resultante da unificação de diferentes programas, foi instituído por lei em 2004. O valor do benefício, reajustável por decreto, varia conforme a renda domiciliar per capita da família, o número e a idade dos filhos. Esta série apresenta o número de famílias beneficiadas pelo programa em dezembro de cada ano (2016)",
+    "Label": "Programa Bolsa Família - número de benefícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "val_ad_agropecuaria_2016",
+    "Description": "O Valor Adicionado Agropecuária representa a contribuição que o setor agropecuário acresce ao valor final da produção de um determinado território deduzido o valor dos insumos utilizados no processo produtivo em um dado período de tempo.",
+    "Label": "Valor adicionado Agropecuária",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "val_ad_industria_2016",
+    "Description": "O Valor Adicionado Indústria representa a contribuição que o setor industrial acresce ao valor final da produção de um determinado território deduzido o valor dos insumos utilizados no processo produtivo em um dado período de tempo.",
+    "Label": "Valor adicionado Indústria",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "val_ad_servicos_2018",
+    "Description": "O Valor Adicionado Serviços representa a contribuição que o setor de serviços acresce ao valor final da produção de um determinado território deduzido o valor dos insumos utilizados no processo produtivo em um dado período de tempo.",
+    "Label": "Valor adicionado serviços",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "val_admpub_2016",
+    "Description": "O Valor Adicionado é definido como o saldo entre a produção e o consumo intermediário, representando a contribuição de cada atividade econômica no PIB. No caso das administrações públicas em que a produção é mensurada pelo custo, o valor adicionado é obtido pela soma de seus componentes: remunerações (salários e contribuições sociais), outros impostos sobre a produção pagos pelas administrações públicas e o consumo de capital fixo.",
+    "Label": "Valor adicionado administração pública",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "cgt_2018",
+    "Description": "Os níveis de centralidade identificados de Gestão do Território são utilizados para estabelecer a hierarquia dos centros urbanos, especialmente para os estratos mais elevados da hierarquia urbana, como Metrópoles e Capitais Regionais. Portanto, ele mapeia as ligações entre sedes e filiais de empresas e entre instituições públicas de abrangência nacional. Os valores foram normalizados e subdivividos em nove classes (de natureza distintas dos centros de maior hierarquia, que detêm uma estrutura de gestão e controle do território bem superior aos das cidades menores), portanto, quanto mais próximo de 1 maior de centralídade.",
+    "Label": "Centralidade de Gestão do Território (CGT)",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "ci_2018",
+    "Description": "A proposição básica para definição do coeficiente de gestão empresarial considerou a distribuição de unidades locais (filiais), no território brasileiro, situadas em município diferente do que abriga a sede. A segunda premissa vai além da aferição da capacidade de comando, levando em conta o poder de atração do município em reter filiais de empresas sediadas fora do mesmo. Nesse sentido, estabeleceu-se como fórmula de centralidade a intensidade das ligações entre cada centro com seus congêneres. O indicador construído se baseia no somatório de empresas e filiais, tanto na condição de controle (comando ou projeção) como de atração (polarização).",
+    "Label": "Coeficiente de Intensidade da Gestão Empresarial (CI)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "empresas_sede_2016",
+    "Description": "Número Total de Empresas-sede na cidade",
+    "Label": "Empresas-sede na cidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "filiais_controladas_2016",
+    "Description": "Número Total de Filiais controladas por Empresas-sede da cidade",
+    "Label": "Filiais controladas por empresas-sede da cidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "filiais_2016",
+    "Description": "Número Total de Filiais na cidade",
+    "Label": "Filiais na cidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "empresas_controladoras_2016",
+    "Description": "Número Total de Empresas-sede que controlam filiais na cidade",
+    "Label": "Empresas-sede que controlam filiais na cidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pinss1_2019",
+    "Description": "Presença de unidades do INSS num nível mais elementar (Agências e Unidades de atendimento)",
+    "Label": "Presença do INSS - Nível 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pinss2_2019",
+    "Description": "Presença de unidades do INSS num nível de regiões geográficas imediadas (Gerências Executivas)",
+    "Label": "Presença do INSS - Nível 2",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pinss3_2019",
+    "Description": "Presença de unidades do INSS num nível das grandes regiões (Superintendências Regionais)",
+    "Label": "Presença do INSS - Nível 4",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pinss4_2019",
+    "Description": "Presença de unidades do INSS que são sedes nacionais (Sede do INSS)",
+    "Label": "Presença do INSS - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "psectrab1_2019",
+    "Description": "Presença de unidades da Secretaria do Trabalho num nível mais elementar (Agências Regionais do Trabalho)",
+    "Label": "Presença da Secretaria do Trabalho - Nível 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "psectrab2_2019",
+    "Description": "Presença de unidades da Secretaria do Trabalho num nível de regiões geográficas imediadas (Gerências Regionais do Trabalho)",
+    "Label": "Presença da Secretaria do Trabalho - Nível 2",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "psectrab3_2019",
+    "Description": "Presença de unidades da Secretaria do Trabalho num nível estadual (Superintendências Regionais da Secretaria do Trabalho)",
+    "Label": "Presença da Secretaria do Trabalho - Nível 3",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "psectrab5_2019",
+    "Description": "Presença de unidades da Secretaria do Trabalho que são sedes nacionais (Sede da Secretaria do Trabalho)",
+    "Label": "Presença da Secretaria do Trabalho - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "prf1_2019",
+    "Description": "Presença de unidades do Receita Federal num nível mais elementar (Agências Inspetórias da Receita Federal)",
+    "Label": "Presença da Receita Federal - Nivel 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "prf2_2019",
+    "Description": "Presença de unidades do Receita Federal num nível de regiões geográficas imediadas (Delegacias da Receita Federal)",
+    "Label": "Presença da Receita Federal - Nivel 2",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "prf4_2019",
+    "Description": "Presença de unidades do Receita Federal num nível das grandes regiões (Regiões Fiscais)",
+    "Label": "Presença da Receita Federal - Nivel 4",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "prf5_2019",
+    "Description": "Presença de unidades da Receita Federal que são sedes nacionais (Sede da Receita Federal)",
+    "Label": "Presença da Receita Federal - Nivel 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pibge1_2019",
+    "Description": "Presença de unidades do IBGE num nível mais elementar (Agências)",
+    "Label": "Presença do IBGE - Nível 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pibge3_2019",
+    "Description": "Presença de unidades do IBGE num nível estadual (Unidades estuduais)",
+    "Label": "Presença do IBGE - Nível 3",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pibge5_2019",
+    "Description": "Presença de unidades do IBGE que são sedes nacionais (Sede do IBGE)",
+    "Label": "Presença do IBGE - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjf2_2019",
+    "Description": "Presença de unidades do Justiça Federal num nível de regiões geográficas imediadas (Subseções Judiciárias)",
+    "Label": "Presença da Justiça Federal - Nível 2",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjf3_2019",
+    "Description": "Presença de unidades do Justiça Federal num nível estadual (Seções Judiciárias)",
+    "Label": "Presença da Justiça Federal - Nível 3",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjf4_2019",
+    "Description": "Presença de unidades de Justiça Federal num nível das grandes regiões (Tribunais Regionais Federais)",
+    "Label": "Presença da Justiça Federal - Nível 4",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjf5_2019",
+    "Description": "Presença de unidades de Justiça Federal que são sedes nacionais (Superior Tribunal de Justiça)",
+    "Label": "Presença da Justiça Federal - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pje1_2019",
+    "Description": "Presença de unidades de Justiça Eleitoral num nível mais elementar (Zonas Eleitorais)",
+    "Label": "Presença da Justiça Eleitoral - Nível 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pje3_2019",
+    "Description": "Presença de unidades de Justiça Eleitoral num nível estadual (Tribunal Regional Eleitoral)",
+    "Label": "Presença da Justiça Eleitoral - Nível 3",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pje5_2019",
+    "Description": "Presença de unidades da Justiça Eleitoral que são sedes nacionais (Tribunal Superior Eleitoral)",
+    "Label": "Presença da Justiça Eleitoral - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjt1_2019",
+    "Description": "Presença de unidades da Justiça do Trabalho num nível mais elementar (Varas do Trabalho)",
+    "Label": "Presença da Justiça do Trabalho - Nível 1",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjt3_2019",
+    "Description": "Presença de unidades da Justiça do Trabalho num nível estadual (Tribunais Regionais do Trabalho)",
+    "Label": "Presença da Justiça do Trabalho - Nível 3",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "pjt5_2019",
+    "Description": "Presença de unidades da Justiça do Trabalho que são sedes nacionais (Tribunal Superior do Trabalho)",
+    "Label": "Presença da Justiça do Trabalho - Nível 5",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "centro_gestao_2018",
+    "Description": "Definiu-se a presença mínima de três empresas multilocalizadas e de pelo menos três diferentes Cidades conectadas por essas empresas para que uma Cidade fosse considerada centro de gestão empresarial. Dessa forma, se estabelece um critério mínimo de articulação da gestão tanto no nível econômico (quantidade de empresas) quanto no territorial (quantidade de Cidades articuladas), focando-se, assim, nos principais nós da rede.",
+    "Label": "Cidade como Centro de Gestão do Território",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "ia_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos. Por exemplo, as Cidades A e B, cada uma com 100 mil habitantes, mencionam a J como destino com, respectivamente, 50% e 10%. O Índice de Atração da Cidade J será a soma de (100 mil x 0,5) e (100 mil x 0,1), resultando em 60 mil. Esse valor não corresponde ao número de pessoas que efetivamente se deslocam à Cidade J, mas oferece um parâmetro comparativo da atração entre diferentes Cidades.",
+    "Label": "Índice de Atração Geral",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q1_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para compra de vestuário e calçados",
+    "Label": "Para compra de vestuário e calçados",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q2_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para compra de móveis e eletroeletrônicos",
+    "Label": "Para compra de móveis e eletroeletrônicos",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q3_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para serviços de saúde de baixa e média complexidades",
+    "Label": "Índice de atração - saúde de baixa e média complexidades",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q4_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para serviços de saúde de alta complexidade",
+    "Label": "Índice de atração - saúde de alta complexidade",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q5_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para ensino superior",
+    "Label": "Ensino superior",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q6_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para atividades culturais",
+    "Label": "Atividades culturais",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q7_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para atividades esportivas",
+    "Label": "Atividades esportivas",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q8_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para aeroporto",
+    "Label": "Aeroporto",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q9_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para jornais",
+    "Label": "Jornais",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "iat_q10_2018",
+    "Description": "Índice calculado a partir da população residente nos Municípios e o percentual dos destinos para transporte público",
+    "Label": "Transporte público",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "inter_2018",
+    "Description": "Presença de ligações em temas do módulo internacional",
+    "Label": "Presença de ligações em temas do módulo internacional",
+    "Unit": "SN",
+    "Format": "STRING",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "c_finan_2018",
+    "Description": "Classe de centralidade de atividades financeiras",
+    "Label": "Classe de centralidade de atividades financeiras",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "ens_grad_2018",
+    "Description": "Classe de centralidade no ensino de graduação",
+    "Label": "Classe de centralidade no ensino de graduação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "ens_pos_2018",
+    "Description": "Classe de centralidade no ensino de pós-graduação",
+    "Label": "Classe de centralidade no ensino de pós-graduação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "ens_ead_2018",
+    "Description": "Classe de centralidade no ensino à distância",
+    "Label": "Classe de centralidade no ensino à distância",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "sau_centra_2018",
+    "Description": "Classe de centralidade de serviços de saúde",
+    "Label": "Classe de centralidade de serviços de saúde",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "sau_comple_2018",
+    "Description": "Classe de complexidade de serviços de saúde",
+    "Label": "Classe de complexidade de serviços de saúde",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "sau_leitos_2018",
+    "Description": "Quantidade de leitos hospitalares por mil habitantes",
+    "Label": "Quantidade de leitos hospitalares por mil habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "dom_num_2019",
+    "Description": "Quantidade de domínios de internet",
+    "Label": "Quantidade de domínios de internet",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "dom_hab_2019",
+    "Description": "Quantidade de domínios de internet por mil habitantes",
+    "Label": "Quantidade de domínios de internet por mil habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "c_tv_2019",
+    "Description": "Classe de centralidade para redes de televisão",
+    "Label": "Classe de centralidade para redes de televisão",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "agro_iaa_q_2018",
+    "Description": "Índice de atração agropecuária para aquisição de insumos para a produção agropecuária",
+    "Label": "Aquisição de insumos (agropecuária)",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "agro_iaa_1_2018",
+    "Description": "Índice de atração agropecuária para aquisição de maquinários e implementos para a produção agropecuária",
+    "Label": "Aquisição de maquinários e implementos (agropecuária)",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "agro_iaa_2_2018",
+    "Description": "Índice de atração agropecuária para assistência técnica para a produção agropecuária",
+    "Label": "Assistência técnica (agropecuária)",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "REGIC",
+    "Name": "agro_iaa_3_2018",
+    "Description": "Índice de atração agropecuária para destino da produção agropecuária",
+    "Label": "Destino da produção agropecuária",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Em",
+    "ID": "ia(2018)"
+  },
+  {
+    "Agency": "BNDES",
+    "Name": "total_2020",
+    "Description": "Aprovações do Sistema BNDES para os grandes setores CNAE por município, no ano de 2020.",
+    "Label": "Aprovações do Sistema BNDES",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "BNDES",
+    "Name": "agropecuaria_e_pesca_2020",
+    "Description": "Aprovações do Sistema BNDES para o grande setor CNAE Agropeciária e Pesca, por município, no ano de 2020.",
+    "Label": "Agropecuária e Pesca",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "TOTAL_2020"
+  },
+  {
+    "Agency": "BNDES",
+    "Name": "comercio_e_servicos_2020",
+    "Description": "Aprovações do Sistema BNDES para o grande setor CNAE Comércio e Serviços, por município, no ano de 2020.",
+    "Label": "Comércio e Serviços",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "TOTAL_2020"
+  },
+  {
+    "Agency": "BNDES",
+    "Name": "industria_de_transformacao_2020",
+    "Description": "Aprovações do Sistema BNDES para o grande setor CNAE Indústria de Transformação, por município, no ano de 2020.",
+    "Label": "Indústria de Transformação",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "TOTAL_2020"
+  },
+  {
+    "Agency": "BNDES",
+    "Name": "industria_extrativa_2020",
+    "Description": "Aprovações do Sistema BNDES para o grande setor CNAE Indústria Extrativa, por município, no ano de 2020.",
+    "Label": "Indústria Extrativa",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec",
+    "ID": "TOTAL_2020"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_93_2010_2_0_1_0",
+    "Description": "População no último censo (2010)",
+    "Label": "População residente",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_93_2010_2_0_1_1",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "População residente na zona urbana",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_1000093_2010_2_0_1_1",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de população residente na zona urbana",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_93_2010_2_0_1_2",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "População residente na zona rural",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_1000093_2010_2_0_1_2",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de população residente na zona rural",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_93_2010_2_4_1_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "População masculina",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_1000093_2010_2_4_1_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de população masculina",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_93_2010_2_5_1_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "População feminina",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x202_1000093_2010_2_5_1_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de população feminina",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur",
+    "ID": "202/93/2010-2[0]|1[0]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "grau_urbanizacao",
+    "Description": "Taxa de urbanização é porcentagem da população residente constituída pelos moradores em domicílios em situação urbana em relação à população total (2010)",
+    "Label": "Taxa de Urbanização",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1554_1000140_2010_1568_11626",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com nível de instrução indeterminado",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1554_1000140_2010_1568_9493",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população sem nível de instrução",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1554_1000140_2010_1568_9494",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com nível fundamental completo e médio incompleto",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1554_1000140_2010_1568_9495",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com nível médio completo e superior incompleto",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1554_1000140_2010_1568_99713",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com nível superior completo",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3422_1001319_2010_490_12826",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com deslocamento para o trabalho de até 5 minutos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3422_1001319_2010_490_12827",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com deslocamento para o trabalho entre 6 minutos e 30 minutos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3422_1001319_2010_490_12828",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com deslocamento para o trabalho entre mais de 30 minutos e 1 hora",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3422_1001319_2010_490_12829",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com deslocamento para o trabalho entre 1 hora e 2 horas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3422_1001319_2010_490_12830",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual da população com deslocamento para o trabalho acima de 2 horas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Mo"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92980",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas sem rendimento",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92973",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento de até 1/2 salário mínimo",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92974",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento entre 1/2 e 1 salário mínimo",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92975",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento entre 1 e 2 salários mínimos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92976",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento entre 2 e 5 salários mínimos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92977",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento entre 5 e 10 salários mínimos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92978",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento entre 10 e 20 salários mínimos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_92979",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento de mais de 20 salários mínimos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1384_1000140_2010_11570_12129",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas com rendimento não declarado",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1541_1000140_2010_9832_78090",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas solteiras",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1541_1000140_2010_9832_78093",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas divorciadas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1541_1000140_2010_9832_78094",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas viúvas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1541_1000140_2010_9832_99197",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas casadas",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x1541_1000140_2010_9832_99207",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de pessoas desquitadas ou separadas judicialmente",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "analfabetos_10anos_o_umais",
+    "Description": "Número de pessoas anafabetas de 10 anos ou mais de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas (2010)",
+    "Label": "População analfabeta",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ed"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos10a14anos",
+    "Description": "Percentual de pessoas analfabetas de 10 a 14 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 10 e 14 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos15a19anos",
+    "Description": "Percentual de pessoas analfabetas de 15 a 19 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 15 e 19 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos20a29anos",
+    "Description": "Percentual de pessoas analfabetas de 20 a 29 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 20 e 29 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos30a39anos",
+    "Description": "Percentual de pessoas analfabetas de 30 a 39 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 30 e 39 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos40a49anos",
+    "Description": "Percentual de pessoas analfabetas de 40 a 49 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 40 e 49 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos50a59anos",
+    "Description": "Percentual de pessoas analfabetas de 50 a 59 anos de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos entre 50 e 59 anos",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "per_analfabetos60anos_o_umais",
+    "Description": "Percentual de pessoas analfabetas de 60 anos ou mais de idade. Pessoas que declaram não saber ler e escrever um bilhete simples no idioma que conhece. Aquela que aprendeu a ler e escrever, mas esqueceu, e a que apenas assina o próprio nome são, também, consideradas analfabetas.",
+    "Label": "Percentual de analfabetos de 60 anos ou mais",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ed",
+    "ID": "analfabetos_10anos_o_umais"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "num_leitos",
+    "Description": "Total de leitos disponíveis (2010)",
+    "Label": "Total de leitos disponíveis",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "razao_leitos_1000_hab",
+    "Description": "Razão de leitos para internação por mil habitantes (2010)",
+    "Label": "Leitos Disponível por mil habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa",
+    "ID": "num_leitos"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "num_leitos_sus",
+    "Description": "Número de leitos disponíveis no sistema público de saúde (2010)",
+    "Label": "Leitos Disponíveis no SUS",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Sa",
+    "ID": "num_leitos"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "razao_leitos_sus_1000_hab",
+    "Description": "Razão de leitos para internação disponíveis ao SUS por mil habitantes (2010)",
+    "Label": "Leitos Disponíveis no SUS por mil habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa",
+    "ID": "num_leitos"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "razao_resson_mag_100000_hab",
+    "Description": "Razão de equipamentos de tomografia computadorizada, disponíveis ao SUS, por 100.000 habitantes (2010)",
+    "Label": "Equipamentos de tomografia computadorizada no SUS para cada 100.000 habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "razao_resson_mag_sus_500000_hab",
+    "Description": "Razão de equipamentos de ressonância magnética, disponíveis ao SUS, por 500.000 habitantes (2010)",
+    "Label": "Equipamentos de Ressonância Magnética no SUS para cada 500.000 habitantes",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Sa"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "razaodependencia",
+    "Description": "Razão entre a população potencialmente inativa (0 a 14 anos e 65 anos ou mais de idade) e a população potencialmente ativa (15 a 64 anos de idade), na data de referência do Censo Demográfico (2010)",
+    "Label": "Razão de Dependência",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_96_2010_386_9680",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Número de domicílios com rendimento nominal mensal per capita",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9681",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 0 e 1/4 salário mínimo per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9682",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 1/4 e 1/2 salário mínimo per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9683",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 1/2 e 1 salário mínimo per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9684",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 1 e 2 salários mínimos per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9685",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 2 e 3 salários mínimos per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9686",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento entre 3 e 5 salários mínimos per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_11780",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com rendimento maior que 5 salários mínimos per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec",
+    "ID": "3261/96/2010-386[9680]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3261_1000096_2010_386_9692",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Número de domicílios sem rendimento nominal mensal per capita",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3218_1000096_2010_61_0_299_0_67_0_309_3011",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com energia elétrica",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3218_1000096_2010_61_0_299_0_67_0_309_3018",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios sem energia elétrica",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_96_2010_299_2942",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Número de domicílios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_1000096_2010_299_10930",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com banheiro ou sanitário",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_1000096_2010_299_10941",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com banheiro ou sanitário e rede geral de esgoto ou pluvial",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_1000096_2010_299_10942",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com banheiro ou sanitário e fossa séptica",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_1000096_2010_299_10962",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios com banheiro ou sanitário e outro",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x3154_1000096_2010_299_10963",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios sem banheiro ou sanitário",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x185_96_2010_1_1_68_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Número de domicílios na zona urbana",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x185_1000096_2010_1_1_68_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios na zona urbana",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x185_96_2010_1_2_68_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Número de domicílios na zona rural",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x185_1000096_2010_1_2_68_0",
+    "Description": "Censo Demográfico, 2010",
+    "Label": "Percentual de domicílios na zona rural",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ur"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_37_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Produto Interno Bruto a preços correntes",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_497_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do PIB municipal em relação ao da unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_543_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Impostos sobre produtos",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_545_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação dos impostos sobre produtos em relação à unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_498_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Valor adicionado bruto",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_500_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do valor adicionado bruto em relação à unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_513_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Valor adicionado bruto da agropecuária",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_515_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do valor adicionado bruto da agropecuária municipal em relação à  unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_517_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Valor adicionado bruto da indústria",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_519_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do valor adicionado bruto da indústria municipal em relação à unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_6575_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Valor adicionado bruto dos serviços",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_6572_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do valor adicionado bruto dos serviços municipais em relação à unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_525_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Valor adicionado bruto da administração, defesa, educação e saúde públicas e seguridade social",
+    "Unit": "M",
+    "Format": "FLOAT2",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x5938_527_2019",
+    "Description": "Produto Interno Bruto dos Municípios, 2019",
+    "Label": "Participação do valor adicionado bruto da administração em relação à unidade da federação",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117897",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Número total de empresas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116830",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Agricultura, pecuária, produção florestal, pesca e aquicultura",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116831",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Agricultura, pecuária e serviços relacionados",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116830]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116866",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Produção florestal",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116830]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116873",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Pesca e aquicultura",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116830]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116880",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Indústrias extrativas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116881",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Extração de carvão mineral",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116880]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116884",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Extração de petróleo e gás natural",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116880]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116887",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Extração de minerais metálicos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116880]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116897",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Extração de minerais não-metálicos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116880]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116905",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de apoio à extração de minerais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116880]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116910",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Indústrias de transformação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116911",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos alimentícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116952",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de bebidas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116960",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos do fumo",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116965",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos têxteis",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116985",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Confecção de artigos do vestuário e acessórios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_116994",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117007",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos de madeira",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117015",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de celulose, papel e produtos de papel",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117029",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Impressão e reprodução de gravações",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117039",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117048",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos químicos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117082",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos farmoquímicos e farmacêuticos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117089",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos de borracha e de material plástico",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117099",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos de minerais não-metálicos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117116",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Metalurgia",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117136",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117159",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de equipamentos de informática, produtos eletrônicos e ópticos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117179",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de máquinas, aparelhos e materiais elétricos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117196",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de máquinas e equipamentos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117229",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de veículos automotores, reboques e carrocerias",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117245",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117261",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de móveis",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117267",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Fabricação de produtos diversos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117283",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Manutenção, reparação e instalação de máquinas e equipamentos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[116910]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117296",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Eletricidade e gás",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117297",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Eletricidade, gás e outras utilidades",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117296]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117307",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Água, esgoto, atividades de gestão de resíduos e descontaminação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117308",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Captação, tratamento e distribuição de água",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117307]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117311",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Esgoto e atividades relacionadas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117307]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117315",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Coleta, tratamento e disposição de resíduos; recuperação de materiais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117307]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117326",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Descontaminação e outros serviços de gestão de resíduos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117307]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117329",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Construção",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117330",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Construção de edifícios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117329]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117335",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Obras de infraestrutura",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117329]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117348",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços especializados para construção",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117329]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117363",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Comércio; reparação de veículos automotores e motocicletas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117364",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Comércio e reparação de veículos automotores e motocicletas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117363]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117376",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Comércio por atacado, exceto veículos automotores e motocicletas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117363]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117438",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Comércio varejista",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117363]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117484",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Transporte, armazenagem e correio",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117485",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Transporte terrestre",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117484]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117501",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Transporte aquaviário",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117484]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117513",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Transporte aéreo",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117484]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117521",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Armazenamento e atividades auxiliares dos transportes",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117484]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117538",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Correio e outras atividades de entrega",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117484]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117543",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Alojamento e alimentação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117544",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Alojamento",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117543]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117549",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Alimentação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117543]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117555",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Informação e comunicação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117556",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Edição e edição integrada à impressão",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117567",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades cinematográficas, produção de vídeos e de programas de televisão; gravação de som e edição de música",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117575",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de rádio e de televisão",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117581",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Telecomunicações",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117594",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades dos serviços de tecnologia da informação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117601",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de prestação de serviços de informação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117555]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117608",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades financeiras, de seguros e serviços relacionados",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117609",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de serviços financeiros",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117608]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117641",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Seguros, resseguros, previdência complementar e planos de saúde",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117608]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117654",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades auxiliares dos serviços financeiros, seguros, previdência complementar e planos de saúde",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117608]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117666",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades imobiliárias",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117667",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades imobiliárias",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117666]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117673",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades profissionais, científicas e técnicas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117674",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades jurídicas, de contabilidade e de auditoria",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117680",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de sedes de empresas e de consultoria em gestão empresarial",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117685",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços de arquitetura e engenharia; testes e análises técnicas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117692",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Pesquisa e desenvolvimento científico",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117697",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Publicidade e pesquisa de mercado",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117704",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Outras atividades profissionais, científicas e técnicas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117711",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades veterinárias",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117673]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117714",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades administrativas e serviços complementares",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117715",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Aluguéis não-imobiliários e gestão de ativos intangíveis não-financeiros",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117731",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Seleção, agenciamento e locação de mão-de-obra",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117738",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Agências de viagens, operadores turísticos e serviços de reservas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117744",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de vigilância, segurança e investigação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117752",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços para edifícios e atividades paisagísticas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117762",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117714]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117774",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Administração pública, defesa e seguridade social",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117775",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Administração pública, defesa e seguridade social",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117774]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117788",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Educação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117789",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Educação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117788]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117810",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Saúde humana e serviços sociais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117811",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de atenção à saúde humana",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117810]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117827",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de atenção à saúde humana integradas com assistência social, prestadas em residências coletivas e particulares",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117810]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117835",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços de assistência social sem alojamento",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117810]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117838",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Artes, cultura, esporte e recreação",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117839",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades artísticas, criativas e de espetáculos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117838]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117844",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades ligadas ao patrimônio cultural e ambiental",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117838]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117849",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de exploração de jogos de azar e apostas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117838]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117852",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades esportivas e de recreação e lazer",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117838]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117861",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Outras atividades de serviços",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117862",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Atividades de organizações associativas",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117861]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117875",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Reparação e manutenção de equipamentos de informática e comunicação e de objetos pessoais e domésticos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117861]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117882",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Outras atividades de serviços pessoais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117861]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117888",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços domésticos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117889",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Serviços domésticos",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117888]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117892",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Organismos internacionais e outras instituições extraterritoriais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117897]"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "x6449_2585_2020_12762_117893",
+    "Description": "Cadastro Central de Empresas,2020",
+    "Label": "Organismos internacionais e outras instituições extraterritoriais",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Em",
+    "ID": "6449/2585/2020-12762[117892]"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "densidade_banda_larga_fixa_2022_3",
+    "Description": "A Anatel publica mensalmente a quantidade de acessos no Brasil relativos aos principais serviços de telecomunicações. Este indicador – composto por dados fornecidos à Anatel pelas próprias prestadoras – mostra a situação dos números de acessos de assinantes dos serviços de Banda Larga Fixa para cada 100 habitantes no mês de março de 2022.",
+    "Label": "Banda Larga Fixa - Densidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "densidade_telefonia_fixa_2022_3",
+    "Description": "A Anatel publica mensalmente a quantidade de acessos no Brasil relativos aos principais serviços de telecomunicações. Este indicador – composto por dados fornecidos à Anatel pelas próprias prestadoras – mostra a situação dos números de acessos de assinantes dos serviços de Telefonia Fixa para cada 100 habitantes no mês de março de 2022.",
+    "Label": "Telefonia Fixa - Densidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "densidade_telefonia_movel_2022_3",
+    "Description": "A Anatel publica mensalmente a quantidade de acessos no Brasil relativos aos principais serviços de telecomunicações. Este indicador – composto por dados fornecidos à Anatel pelas próprias prestadoras – mostra a situação dos números de acessos de assinantes dos serviços de Telefonia Móvel para cada 100 habitantes no mês de março de 2022.",
+    "Label": "Telefonia Móvel - Densidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "densidade_tv_por_assinatura_2022_3",
+    "Description": "A Anatel publica mensalmente a quantidade de acessos no Brasil relativos aos principais serviços de telecomunicações. Este indicador – composto por dados fornecidos à Anatel pelas próprias prestadoras – mostra a situação dos números de acessos de assinantes dos serviços de TV por Assinatura para cada 100 habitantes no mês de março de 2022.",
+    "Label": "TV por Assinatura - Densidade",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_area_coberta_2g_2021",
+    "Description": "Porcentagem da área do polígono de Setor Censitário coberto com o sinal de telefonia móvel, calculado pela projeção ou interseção com os mapas de predição de cobertura móvel.  A estimativa da cobertura móvel envolve as seguintes variáveis: tecnologias, frequências, localização das estações, altura e direção das antenas, potências dos transmissores, edificações e relevo. Os resultados obtidos foram comparados a diversas medidas de campo com o intuito de tornar a informação mais precisa possível. Nesse casom considera-se a área coberta com tecnologia 2G em 2021.",
+    "Label": "Porcentagem da área do município com cobertura 2G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_area_coberta_3g_2021",
+    "Description": "Porcentagem da área do polígono de Setor Censitário coberto com o sinal de telefonia móvel, calculado pela projeção ou interseção com os mapas de predição de cobertura móvel.  A estimativa da cobertura móvel envolve as seguintes variáveis: tecnologias, frequências, localização das estações, altura e direção das antenas, potências dos transmissores, edificações e relevo. Os resultados obtidos foram comparados a diversas medidas de campo com o intuito de tornar a informação mais precisa possível. Nesse casom considera-se a área coberta com tecnologia 3G em 2021.",
+    "Label": "Porcentagem da área do município com cobertura 3G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_area_coberta_4g_2021",
+    "Description": "Porcentagem da área do polígono de Setor Censitário coberto com o sinal de telefonia móvel, calculado pela projeção ou interseção com os mapas de predição de cobertura móvel.  A estimativa da cobertura móvel envolve as seguintes variáveis: tecnologias, frequências, localização das estações, altura e direção das antenas, potências dos transmissores, edificações e relevo. Os resultados obtidos foram comparados a diversas medidas de campo com o intuito de tornar a informação mais precisa possível. Nesse casom considera-se a área coberta com tecnologia 4G em 2021.",
+    "Label": "Porcentagem da área do município com cobertura 4G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_domicilios_cobertos_2g_2021",
+    "Description": "Percentual dos domicílios cobertos por rede de telefonia móvel com tecnologia 2G no mês de dezembro de 2021.",
+    "Label": "Porcentagem de domicílios cobertos com tecnologia 2G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_domicilios_cobertos_3g_2021",
+    "Description": "Percentual dos domicílios cobertos por rede de telefonia móvel com tecnologia 3G no mês de dezembro de 2021.",
+    "Label": "Porcentagem de domicílios cobertos com tecnologia 3G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_domicilios_cobertos_4g_2021",
+    "Description": "Percentual dos domicílios cobertos por rede de telefonia móvel com tecnologia 4G no mês de dezembro de 2021.",
+    "Label": "Porcentagem de domicílios cobertos com tecnologia 4G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_moradores_cobertos_2g_2021",
+    "Description": "Percentual da população coberta por rede de telefonia móvel com tecnologia 2G no mês de dezembro de 2021.",
+    "Label": "Porcentagem moradores cobertos com tecnologia 2G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_moradores_cobertos_3g_2021",
+    "Description": "Percentual da população coberta por rede de telefonia móvel com tecnologia 3G no mês de dezembro de 2021.",
+    "Label": "Porcentagem moradores cobertos com tecnologia 3G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "percent_moradores_cobertos_4g_2021",
+    "Description": "Percentual da população coberta por rede de telefonia móvel com tecnologia 4G no mês de dezembro de 2021.",
+    "Label": "Porcentagem moradores cobertos com tecnologia 4G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_velocidade_media_2020_12",
+    "Description": "Velocidade média dos acessos de internet e não-internet do município. Os acessos do tipo Internet são aqueles utilizados para comunicação com a rede mundial de computadores (exemplos: banda larga residencial, contratos corporativos de conexão à rede mundial de computadores). Os demais acessos são classificados como Não Internet (exemplos: comunicação entre dois endereços fixos, comunicação entre filiais de uma empresa).",
+    "Label": "Velocidade Média de Banda Larga Fixa",
+    "Unit": "MB",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_velocidade_media_internet_2020_12",
+    "Description": "Velocidade média dos acessos de internet do município. Nesse caso, os acessos do tipo Internet são aqueles utilizados para comunicação com a rede mundial de computadores (exemplos: banda larga residencial, contratos corporativos de conexão à rede mundial de computadores)",
+    "Label": "Internet - Velocidade Média",
+    "Unit": "MB",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_velocidade_media_nao_internet_2020_12",
+    "Description": "Velocidade média dos acessos de não-internet do município. Nesse caso, os acessos do tipo Internet são aqueles que não visam a comunicação com a rede mundial de computadores (exemplos: comunicação entre dois endereços fixos, comunicação entre filiais de uma empresa).",
+    "Label": "Não-internet - Velocidade Média",
+    "Unit": "MB",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_0kbps_a_512kbps_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa cuja velocidade está entre 0Kbps e 512Kbps. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com velocidade entre 0kbps e 512 kbps",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Banda Larga Fixa - velocidade media(2020/12)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_512kbps_a_2mbps_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa cuja velocidade está entre 512kbps e 2Mbps. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com velocidade entre 512kbps e 2Mbps",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Banda Larga Fixa - velocidade media(2020/12)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_2mbps_a_12mbps_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa cuja velocidade está entre 2Mbps a 12Mbps. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com velocidade entre 2Mbps e 12Mbps",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Banda Larga Fixa - velocidade media(2020/12)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_12mbps_a_34mbps_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa cuja velocidade está entre 12Mbps a 34Mbps. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com velocidade entre 12Mbps e 34Mbps",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Banda Larga Fixa - velocidade media(2020/12)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_mais_que_34mbps_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa cuja velocidade é maior que 34MBs. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com velocidade maior que 34Mbps.",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Banda Larga Fixa - velocidade media(2020/12)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "acessos_banda_larga_fixa_2022_3",
+    "Description": "Os acessos do tipo Internet são aqueles utilizados para comunicação com a rede mundial de computadores (exemplos: banda larga residencial, contratos corporativos de conexão à rede mundial de computadores). Os demais acessos são classificados como Não Internet (exemplos: comunicação entre dois endereços fixos, comunicação entre filiais de uma empresa). Dados de março de 2022.",
+    "Label": "Acessos de Banda Larga Fixa",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_cabo_coaxial_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa por meio de tecnologia de cabo coaxial. Apesar de manter um velocidade rápida na transmissão de dados, o desempenho do uso do cabo coaxial pode ser comprometido quando um número elevado de pessoas se conectarem em uma mesma região. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia de cabo coaxial",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Banda Larga Fixa (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_cabo_metalico_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa por meio de tecnologia de cabo metálico. A internet via cabo metálico utiliza cabos de cobre em pares trançados para transmissão do sinal, de modo que o sinal é elétrico. É uma tecnologia eficiente na transmissão de dados em curtas distâncias, mas apresenta ineficiência em grandes distâncias. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia de cabo metálico",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Banda Larga Fixa (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_fibra_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa por meio de tecnologia de fibra. A internet via fibra é utiliza cabos de vidro ultrapuro. A tecnologia de fibra apresenta o menor índice de interferência por outros sinais, além de apresentar baixo índice de perda de sinal, mesmo em longas distâncias. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia de fibra óptica",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Banda Larga Fixa (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_radio_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa por meio de tecnologia de rádio. A internet via rádio é distribuída para o usuário por meio de torres e antenas, de modo que o sinal viaja pelo ar, na forma ondas. Apresenta o maior índice de interferência por interpéries e sofre com grande perda de eficiência. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia via rádio",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Banda Larga Fixa (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "banda_larga_fixa_porcentagem_de_acessos_satelite_2022_3",
+    "Description": "Porcentagem de acessos de banda larga fixa por meio de tecnologia de satélite. A internet via satélita é utilizada, especialmente, por pessoas que moram longe de centros urbanos, em localidades que não é oferecida conexão via fibra ótica. Apresenta boa velocidade de conexão, mas pode sofrer com interefência de fortes chuvas. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia de satélite",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Banda Larga Fixa (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "acessos_telefonia_movel_2022_3",
+    "Description": "Os dados apresentados referem-se ao número de assinantes dos serviços de telecomunicações de Telefonia Móvel. Dados de março de 2022.",
+    "Label": "Acessos de Telefonia Móvel",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_pos_pago_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel na categoria Pós-pago. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos na categoria Pós-pago.",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_pre_pago_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel na categoria Pré-pago. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos na categoria Pré-pago.",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_2g_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel por meio da tecnologia 2G. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia 2G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_3g_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel por meio da tecnologia 3G. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia 3G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_4g_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel por meio da tecnologia 4G. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia 4G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "telefonia_porcentagem_5g_non_stand_alone_2022_3",
+    "Description": "Porcentagem de acessos de Telefonia móvel por meio da tecnologia 5G. Dados de março de 2022.",
+    "Label": "Porcentagem de acessos com tecnologia 5G",
+    "Unit": "P",
+    "Format": "PROGRESS_BAR",
+    "Classification": "Te",
+    "ID": "Acessos Telefonia Móvel (2022/3)"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "acessos_telefonia_fixa_2022_3",
+    "Description": "Os dados apresentados referem-se aos acessos de Telefonia Fixa (Serviço de Telefonia Fixa Comutada – STFC), enviados pelas prestadoras do serviço. Não estão incluídos os acessos referentes aos telefones de uso público (orelhões).",
+    "Label": "Acessos de Telefonia Fixa",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  },
+  {
+    "Agency": "ANATEL",
+    "Name": "acessos_tv_por_assinatura_2022_3",
+    "Description": "Os dados apresentados referem-se aos acessos de TV por Assinatura, enviados pelas prestadoras do serviço.",
+    "Label": "Acessos de TV por Assinatura",
+    "Unit": "N",
+    "Format": "FLOAT2",
+    "Classification": "Te"
+  }
+]
