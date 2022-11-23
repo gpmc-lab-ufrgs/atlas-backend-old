@@ -10,11 +10,73 @@ This project is part of a collaborative research initiative enabled by principal
 
 The project frontend and all its instructions can be found at here [Atlas Frontend](https://github.com/gpmc-lab-ufrgs/atlas)
 
-## Running the project
+## How to run atlas-backend
 
-This project was developed using Python and Django. To running in your machine, please follow the instructions bellow:
+This project was developed using Python and Django. To set the environment and run in your machine, please follow the instructions bellow:
 
-<!-- colocar as instruções aqui(docker ou nem) -->
+<!-- PARA DOCKER(AINDA NÃO ESTÁ PRONTO) -->
+<!-- ### Setting the environment and Running the project
+```
+docker-compose up
+```  -->
+
+<!-- versão temporaria sem docker -->
+### Setting the environment
+
+#### 1 - Installing all the requirements
+
+```
+pip install -r requirements.txt
+```
+#### 2 - Create local database
+
+```
+createdb atlas_db
+```
+#### 3 - Set migrations
+
+```
+python manage.py makemigrations
+```
+#### 4 - Apply all the migrations
+
+```
+python manage.py migrate
+```
+#### 5 - Populate database with states data
+
+```
+python manage.py load_state 
+```
+#### 6 - Populate database with districts data
+
+```
+python manage.py load_dist
+```
+### Running the project
+
+#### 1 - Activate Virtual Python Environment
+
+```
+source env/bin/activate 
+```
+#### 2 - Config this python env
+
+```
+python3 -m venv env                                
+```
+
+#### 3 - Running the project
+
+```
+python manage.py runserver
+```
+
+#### 4 - Accessing the platform
+
+```
+open http://localhost:8000/admin/
+```
 
 ## How to Contribute to this project?
 See our [Contribution Guide](CONTRIBUTION.md) 🚀 
