@@ -87,13 +87,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 POSTGRES_DB = os.getenv("POSTGRES_DB", "atlas_db")
-POSTGRES_USER = os.getenv("POSTGRES_USER", "leonardogomes")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "atlas_user")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "atlas_password")
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         "NAME": POSTGRES_DB,
         "USER": POSTGRES_USER,
+        "PASSWORD": POSTGRES_PASSWORD,
+        "HOST": "db",
     },
 }
 
