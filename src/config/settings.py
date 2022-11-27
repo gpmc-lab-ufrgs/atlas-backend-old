@@ -50,6 +50,8 @@ THIRD_PARTY_APPS = [
 APPLICATION_APPS = [
     'state',
     'district',
+    'data',
+    'dictionary'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS + THIRD_PARTY_APPS
@@ -88,7 +90,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 POSTGRES_DB = os.getenv("POSTGRES_DB", "atlas_db")
-POSTGRES_USER = os.getenv("POSTGRES_USER", "ana")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "leonardogomes")
 
 DATABASES = {
     'default': {
