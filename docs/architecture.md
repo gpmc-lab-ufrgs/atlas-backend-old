@@ -1,5 +1,36 @@
 # Backend Architecture - Atlas
 
+## Logical View
+
+### Package Diagram 
+
+The goal here is to show the organization and arrangement of backend elements in the form of packages.
+
+<figure>
+
+  ![Package Diagram](./packages_diagram.png)
+  <figcaption style="text-align: center !important">
+    Fonte: Autores
+  </figcaption>
+  
+</figure>
+
+
+## Implantation view
+
+
+Decomposition of the software into layers and subsystems in the implementation model.
+
+<figure>
+
+  ![Implantation Diagram](./implantation_diagram.png)
+  <figcaption style="text-align: center !important">
+    Fonte: Autores
+  </figcaption>
+  
+</figure>
+
+
 ## Data View
 
 In this section the data saved on database is described.
@@ -53,3 +84,4 @@ Example:
     "SIGLA_UF": "DF",
     "NM_REGIAO": "Centro-oeste"
 ```
+
