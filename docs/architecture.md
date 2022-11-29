@@ -2,34 +2,35 @@
 
 ## Logical View
 
-### Package Diagram 
+### Package Diagram
 
 The goal here is to show the organization and arrangement of backend elements in the form of packages.
 
 <figure>
 
-  ![Package Diagram](./packages_diagram.png)
+![Package Diagram](./packages_diagram.png)
+
   <figcaption style="text-align: center !important">
-    Fonte: Autores
+        Font: Authors
   </figcaption>
   
 </figure>
 
-
-## Implantation view
-
+## Implementation view
 
 Decomposition of the software into layers and subsystems in the implementation model.
 
+### Deployment diagram
+
 <figure>
 
-  ![Implantation Diagram](./implantation_diagram.png)
+![Implantation Diagram](./deployment_diagram.png)
+
   <figcaption style="text-align: center !important">
-    Fonte: Autores
+    Font: Authors
   </figcaption>
   
 </figure>
-
 
 ## Data View
 
@@ -84,4 +85,3 @@ Example:
     "SIGLA_UF": "DF",
     "NM_REGIAO": "Centro-oeste"
 ```
-
