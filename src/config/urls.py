@@ -37,7 +37,10 @@ urlpatterns = [
     path("district/", include("district.urls")),
     path("data/", include("data.urls")),
     
-    path('docs/', schema_view.with_ui('swagger', cache_timeout=0),
+    # In the path: / (the root path), the api documentation is displayed according to 
+    # the OpenAPI specification using Swagger to generate this documentation 
+    # automatically
+    path('', schema_view.with_ui('swagger', cache_timeout=0),
          name='schema-swagger-ui'),
 ]
 
