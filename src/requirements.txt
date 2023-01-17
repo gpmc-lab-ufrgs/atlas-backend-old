@@ -10,3 +10,4 @@ pytest==7.1.2
 pytest-cov==3.0.0
 pytest-django==4.5.2
 djangorestframework-gis==1.0.*
+django-rest-swagger==2.2.*

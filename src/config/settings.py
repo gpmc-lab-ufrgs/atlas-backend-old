@@ -41,6 +41,9 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework_gis',
+    'rest_framework_swagger',
+    'django_url_framework',
+    'drf_yasg',
     'corsheaders',
 ]
 
