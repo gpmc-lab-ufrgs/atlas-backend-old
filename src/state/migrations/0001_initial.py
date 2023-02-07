@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('CD_UF', models.CharField(blank=True, default=None, max_length=255, null=True)),
                 ('POPULATION', models.IntegerField(blank=True, default=None, null=True)),
                 ('NM_UF', models.CharField(blank=True, default=None, max_length=255, null=True)),
-                ('SIGLA_UF', models.CharField(blank=True, default=None, max_length=255, null=True)),
+                ('ACRONYM_FU', models.CharField(blank=True, default=None, max_length=255, null=True)),
                 ('NM_REGIAO', models.CharField(blank=True, default=None, max_length=255, null=True)),
             ],
         ),

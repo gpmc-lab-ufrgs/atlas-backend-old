@@ -19,9 +19,9 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(default='district', max_length=255)),
                 ('type', models.CharField(default='Feature', max_length=255)),
                 ('geometry', django.contrib.gis.db.models.fields.MultiPolygonField(blank=True, default=None, srid=4326)),
-                ('CD_MUN', models.CharField(blank=True, default=None, max_length=255, null=True)),
-                ('NM_MUN', models.CharField(blank=True, default=None, max_length=255, null=True)),
-                ('SIGLA_UF', models.CharField(blank=True, default=None, max_length=255, null=True)),
+                ('MUNICIPALITY_CODE', models.CharField(blank=True, default=None, max_length=255, null=True)),
+                ('MUNICIPALITY_NAME', models.CharField(blank=True, default=None, max_length=255, null=True)),
+                ('ACRONYM_FU', models.CharField(blank=True, default=None, max_length=255, null=True)), # ACRONYM OF THE FEDERATIVE UNIT
                 ('AREA_KM2', models.IntegerField(blank=True, default=None, null=True)),
             ],
         ),

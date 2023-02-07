@@ -30,9 +30,9 @@ class Command(BaseCommand):
             
                     geo_type = feature['type']
                     
-                    geo_id = feature['properties']["CD_MUN"]
-                    geo_name = feature['properties']["NM_MUN"]
-                    geo_code = feature['properties']["SIGLA_UF"]
+                    geo_id = feature['properties']["MUNICIPALITY_CODE"]
+                    geo_name = feature['properties']["MUNICIPALITY_NAME"]
+                    geo_code = feature['properties']["ACRONYM_FU"]
                     geo_region = feature['properties']["AREA_KM2"]
                     
                     if feature['geometry']['type'] == 'Polygon':
@@ -45,9 +45,9 @@ class Command(BaseCommand):
                         name=geo_name,
                         type=geo_type,
                         geometry=geom,
-                        CD_MUN= geo_id,
-                        NM_MUN= geo_name,
-                        SIGLA_UF= geo_code,
+                        MUNICIPALITY_CODE= geo_id,
+                        MUNICIPALITY_NAME= geo_name,
+                        ACRONYM_FU= geo_code,
                         AREA_KM2= geo_region
                     )
             

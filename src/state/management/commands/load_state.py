@@ -31,7 +31,7 @@ class Command(BaseCommand):
                     geo_id = feature['properties']["CD_UF"]
                     geo_population = feature['properties']["POPULATION"]
                     geo_name = feature['properties']["NM_UF"]
-                    geo_code = feature['properties']["SIGLA_UF"]
+                    geo_code = feature['properties']["ACRONYM_FU"]
                     geo_region = feature['properties']["NM_REGIAO"]
                     
                     if feature['geometry']['type'] == 'Polygon':
@@ -47,7 +47,7 @@ class Command(BaseCommand):
                         CD_UF= geo_id,
                         POPULATION= geo_population,
                         NM_UF= geo_name,
-                        SIGLA_UF= geo_code,
+                        ACRONYM_FU= geo_code,
                         NM_REGIAO= geo_region 
                     )   
             

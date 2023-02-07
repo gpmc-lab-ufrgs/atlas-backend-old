@@ -8,8 +8,8 @@ class DistrictSerializer(serializers.GeoFeatureModelSerializer):
         model = District
         geo_field = 'geometry'
         fields = [
-            "CD_MUN",
-            "NM_MUN",
-            "SIGLA_UF",
+            "MUNICIPALITY_CODE",
+            "MUNICIPALITY_NAME",
+            "ACRONYM_FU",
             "AREA_KM2",
         ]
