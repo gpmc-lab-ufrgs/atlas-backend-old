@@ -12,6 +12,6 @@ class StateSerializer(serializers.GeoFeatureModelSerializer):
             "CD_UF",
             "POPULATION",
             "NM_UF",
-            "SIGLA_UF",
+            "ACRONYM_FU",
             "NM_REGIAO"
         ]

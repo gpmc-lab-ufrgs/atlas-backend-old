@@ -36,7 +36,7 @@ class State(models.Model):
         blank=True,
     )
     
-    SIGLA_UF = models.CharField(
+    ACRONYM_FU = models.CharField(
         max_length=255, 
         default=None, 
         null=True, 

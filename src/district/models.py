@@ -16,21 +16,21 @@ class District(models.Model):
         blank=True
     )
     
-    CD_MUN = models.CharField(
+    MUNICIPALITY_CODE = models.CharField(
         max_length=255, 
         default=None, 
         null=True, 
         blank=True,
     )
     
-    NM_MUN = models.CharField(
+    MUNICIPALITY_NAME = models.CharField(
         max_length=255, 
         default=None, 
         null=True, 
         blank=True,
     )
     
-    SIGLA_UF = models.CharField(
+    ACRONYM_FU = models.CharField(
         max_length=255, 
         default=None, 
         null=True, 
