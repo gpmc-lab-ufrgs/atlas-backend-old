@@ -1,9 +1,10 @@
-from dictionary.models import Dictionary
-
-import os
 import json
+import os
 
 from django.core.management.base import BaseCommand, CommandError
+
+from dictionary.models import Dictionary
+
 
 class Command(BaseCommand):
     help = 'Import dictionary geojson data'
@@ -15,12 +16,12 @@ class Command(BaseCommand):
         file_paths = os.listdir(folder)
         
         for path in file_paths:
-            file_path = folder + '/' + path
+            file_path = f'{folder}/{path}'
             
             if os.path.exists(file_path) is False:
-                raise CommandError('File "%s" does not exist' % file_path)
+                raise CommandError(f'File {file_path} does not exist')
 
-            self.stdout.write(self.style.SUCCESS('Successfully, file exist "%s"' % file_path))
+            self.stdout.write(self.style.SUCCESS(f'Successfully, file exist {file_path}'))
             self.stdout.write(self.style.WARNING('processing...'))
         
             with open(file_path, 'r') as file:
@@ -46,7 +47,7 @@ class Command(BaseCommand):
                         unit= unit
                     )
             
-                    self.stdout.write(self.style.HTTP_SUCCESS('"%s" loaded' % name))
+                    self.stdout.write(self.style.HTTP_SUCCESS(f'{name} loaded'))
                 
         self.stdout.write(self.style.SUCCESS('Data loaded :D'))
                 

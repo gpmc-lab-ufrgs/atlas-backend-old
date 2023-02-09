@@ -1,10 +1,11 @@
+import json
+import os
+
+from django.contrib.gis.geos import GEOSGeometry
+from django.core.management.base import BaseCommand, CommandError
+
 from district.models import District
 
-import os
-import json
-from django.contrib.gis.geos import GEOSGeometry
-
-from django.core.management.base import BaseCommand, CommandError
 
 class Command(BaseCommand):
     help = 'Import district geojson data'
@@ -16,12 +17,12 @@ class Command(BaseCommand):
         file_paths = os.listdir(folder)
         
         for path in file_paths:
-            file_path = folder + '/' + path
+            file_path = f'{folder}/{path}'
             
             if os.path.exists(file_path) is False:
-                raise CommandError('File "%s" does not exist' % file_path)
+                raise CommandError(f'File {file_path} does not exist')
 
-            self.stdout.write(self.style.SUCCESS('Successfully, file exist "%s"' % file_path))
+            self.stdout.write(self.style.SUCCESS(f'Successfully, file exist {file_path}'))
             self.stdout.write(self.style.WARNING('processing...'))
         
             with open(file_path, 'r') as file:
@@ -30,10 +31,10 @@ class Command(BaseCommand):
             
                     geo_type = feature['type']
                     
-                    geo_id = feature['properties']["CD_MUN"]
-                    geo_name = feature['properties']["NM_MUN"]
-                    geo_code = feature['properties']["SIGLA_UF"]
-                    geo_region = feature['properties']["AREA_KM2"]
+                    geo_id = feature['properties']['CD_MUN']
+                    geo_name = feature['properties']['NM_MUN']
+                    geo_code = feature['properties']['SIGLA_UF']
+                    geo_region = feature['properties']['AREA_KM2']
                     
                     if feature['geometry']['type'] == 'Polygon':
                         feature['geometry']['type'] = 'MultiPolygon'
@@ -51,7 +52,7 @@ class Command(BaseCommand):
                         AREA_KM2= geo_region
                     )
             
-            self.stdout.write(self.style.HTTP_SUCCESS('"%s" loaded' % file_path))
+            self.stdout.write(self.style.HTTP_SUCCESS(f'{file_path} loaded'))
                 
         self.stdout.write(self.style.SUCCESS('Data loaded :D'))
                 
