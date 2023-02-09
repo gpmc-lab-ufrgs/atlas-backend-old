@@ -1,14 +1,15 @@
 from django.contrib.gis.db import models
 
+
 class District(models.Model):
     name = models.CharField(
         max_length=255, 
-        default="district",
+        default='district',
     )
     
     type = models.CharField(
         max_length=255, 
-        default="Feature"
+        default='Feature'
     )
     
     geometry = models.MultiPolygonField(
