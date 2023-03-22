@@ -1,0 +1,47 @@
+[
+  {
+    "Agency": "IBGE",
+    "Name": "PIBE(2019)",
+    "Description": "PIB Estadual a preços constantes R$ (mil), ano 2010",
+    "Label": "PIB Estadual a preços constantes",
+    "Unit": "M",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "TOTMUNE(2020)",
+    "Description": "Número total de municípios",
+    "Label": "Números de Municípios",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "POPTOT(2010)",
+    "Description": "Número total de habitantes da população residente",
+    "Label": "População residente - total",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "De"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "PEAtiva(2014)",
+    "Description": "Número de pessoas consideradas “ativas” no mercado de trabalho, grupo que inclui todas aquelas com 10 anos ou mais de idade que estavam procurando ocupação ou trabalhando",
+    "Label": "População economicamente ativa (PEA)",
+    "Unit": "N",
+    "Format": "INT",
+    "Classification": "Ec"
+  },
+  {
+    "Agency": "IBGE",
+    "Name": "AREA(2020)",
+    "Description": "Área Geográfica publicada nos Censos (Km²)",
+    "Label": "Área Geográfica",
+    "Unit": "D",
+    "Format": "INT",
+    "Classification": "De"
+  }
+]

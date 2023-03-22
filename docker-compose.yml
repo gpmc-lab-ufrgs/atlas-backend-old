@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  back:
+    image: back
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    command: python src/manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - db
+    networks:
+      - simple-network
+  db:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_PASSWORD=atlas_password
+      - POSTGRES_USER=atlas_user
+      - POSTGRES_DB=atlas_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+    networks:
+      - simple-network
+networks:
+  simple-network:
+    driver: bridge
+volumes:
+  data:
