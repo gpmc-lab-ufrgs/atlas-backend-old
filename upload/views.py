@@ -19,6 +19,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny
 
+from district.models import District
 from .models import *
 from dictionary.models import *
 from data.models import *
@@ -73,8 +74,40 @@ class UploadView(ViewSet):
                             except:
                                 Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
 
-                ###DATA###
+                ###DATA STATE###
                 elif sheetType == 'data' and table == 'state':
+                    for dataset in imported_data.sheets():
+                        if dataset.title == 'dados':
+                            try:
+                                #salva o registro da planilha
+                                try:
+                                    today = date.today()
+                                    spreadsheet = Spreadsheet_register.objects.create(Sheet_name=data.name,Date=today, User=user)
+                                except Exception as e:
+                                    # handle any exceptions that may occur during registration
+                                    print(f"Failed to register spreadsheet: {str(e)}")
+
+                                #salva cada célula a partir da segunda linha terceira coluna como um data no banco
+                                for d in dataset:
+                                    if d[0] == d[1] == d[2] == d[3] == d[4] == d[5] == d[6] == None:
+                                        break # caso encontre 1 linha em branco para
+                                    else:
+                                        tcode = d[0]
+                                        state = State.objects.get(CD_UF=tcode) # pega o estado da linha
+
+                                        headers = dataset.headers  # Get the column headers as a list
+                                        headers = headers[2:]  # Remove the first two headers (tcode,tname)
+                                        for h in headers:
+                                            value = d[headers.index(h)+2] # pega o valor da célula atual
+                                            dictionary = Dictionary.objects.get(name=h) # pega o dicionário cprresponte à celula atual
+
+                                            Data_state.objects.create(state=state, dictionary=dictionary,
+                                                                      value=value, Spreadsheet_register=spreadsheet)
+                            except:
+                                Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
+
+                ###DATA STATE###
+                elif sheetType == 'data' and table == 'city':
                     for dataset in imported_data.sheets():
                         if dataset.title == 'dados':
                             #try:
@@ -92,7 +125,7 @@ class UploadView(ViewSet):
                                     break # caso encontre 1 linha em branco para
                                 else:
                                     tcode = d[0]
-                                    state = State.objects.get(CD_UF=tcode) # pega o estado da linha
+                                    city = District.objects.get(CD_MUN=tcode) # pega o estado da linha
 
                                     headers = dataset.headers  # Get the column headers as a list
                                     headers = headers[2:]  # Remove the first two headers (tcode,tname)
@@ -100,10 +133,10 @@ class UploadView(ViewSet):
                                         value = d[headers.index(h)+2] # pega o valor da célula atual
                                         dictionary = Dictionary.objects.get(name=h) # pega o dicionário cprresponte à celula atual
 
-                                        Data_state.objects.create(state=state, dictionary=dictionary,
+                                        Data_city.objects.create(city=city, dictionary=dictionary,
                                                                   value=value, Spreadsheet_register=spreadsheet)
                             #except:
-                            #    Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
+                                #Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
 
 
                 return Response({'msg': 'Successful', 'usr_pk': user.id, 'usr_token': str(token.key)})
