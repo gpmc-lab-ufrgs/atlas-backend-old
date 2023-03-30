@@ -53,6 +53,7 @@ APPLICATION_APPS = [
     'district',
     'dictionary',
     'data',
+    'sectors',
     'authentication',
     'upload',
 ]
