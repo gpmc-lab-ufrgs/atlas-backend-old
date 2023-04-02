@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("state/", include("state.urls")),
     path("district/", include("district.urls")),
-    #path("data/", include("data.urls")),
+    path("data/", include("data.urls")),
     path("authentication/", include("authentication.urls")),
     path("upload/", include("upload.urls")),
     path('auth/', include('rest_framework.urls')),
