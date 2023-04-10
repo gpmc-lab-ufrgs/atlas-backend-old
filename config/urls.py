@@ -23,6 +23,7 @@ urlpatterns = [
     path("district/", include("district.urls")),
     path("data/", include("data.urls")),
     path("authentication/", include("authentication.urls")),
+    path("dictionary/", include("dictionary.urls")),
     path("upload/", include("upload.urls")),
     path('auth/', include('rest_framework.urls')),
 ]

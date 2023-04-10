@@ -48,7 +48,7 @@ class UploadView(ViewSet):
                 ###Dicionario###
                 if sheetType == 'dictionary':
                     for dataset in imported_data.sheets():
-                        if dataset.title == 'Atlas':
+                        if dataset.title == 'atlas':
                             try:
                                 #salva o registro da planilha
                                 try:
@@ -59,25 +59,28 @@ class UploadView(ViewSet):
                                     print(f"Failed to register spreadsheet: {str(e)}")
 
                                 #salva o dicionário
+                                count_blank_lines = 0
                                 for d in dataset:
                                     if d[0] == d[1] == d[2] == d[3] == d[4]\
                                             == d[5] == d[6] == d[7] == d[8] \
                                             == d[9] == d[10] == d[11] == d[12] \
                                             == None:
+                                        count_blank_lines = count_blank_lines + 1
+                                        if count_blank_lines == 6:
                                             break # caso encontre 1 linha em branco para
                                     else:
                                         Dictionary.objects.create(
                                             agency=d[0], name=d[1], id_sheet=d[2], description_en=d[3],
                                             description_ptbr=d[4], label_en=d[5], label_ptbr=d[6], unit=d[7],
                                             format=d[8], new_classification_ptbr=d[9], new_classification_en=d[10],
-                                            comments_en=d[11], comments_ptbr=d[12], table=table, Spreadsheet_register=spreadsheet)
+                                            ranking=d[11], table=table, Spreadsheet_register=spreadsheet)
                             except:
                                 Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
 
                 ###DATA STATE###
                 elif sheetType == 'data' and table == 'state':
                     for dataset in imported_data.sheets():
-                        if dataset.title == 'dados':
+                        if dataset.title == 'atlas':
                             try:
                                 #salva o registro da planilha
                                 try:
@@ -88,9 +91,12 @@ class UploadView(ViewSet):
                                     print(f"Failed to register spreadsheet: {str(e)}")
 
                                 #salva cada célula a partir da segunda linha terceira coluna como um data no banco
+                                count_blank_lines = 0
                                 for d in dataset:
                                     if d[0] == d[1] == d[2] == d[3] == d[4] == d[5] == d[6] == None:
-                                        break # caso encontre 1 linha em branco para
+                                        count_blank_lines = count_blank_lines + 1
+                                        if count_blank_lines == 6:
+                                            break  # caso encontre 1 linha em branco para
                                     else:
                                         tcode = d[0]
                                         state = State.objects.get(CD_UF=tcode) # pega o estado da linha
@@ -109,7 +115,7 @@ class UploadView(ViewSet):
                 ###DATA STATE###
                 elif sheetType == 'data' and table == 'city':
                     for dataset in imported_data.sheets():
-                        if dataset.title == 'dados':
+                        if dataset.title == 'atlas':
                             #try:
                             #salva o registro da planilha
                             try:
@@ -120,12 +126,19 @@ class UploadView(ViewSet):
                                 print(f"Failed to register spreadsheet: {str(e)}")
 
                             #salva cada célula a partir da segunda linha terceira coluna como um data no banco
+                            count_blank_lines = 0
                             for d in dataset:
                                 if d[0] == d[1] == d[2] == d[3] == d[4] == d[5] == d[6] == None:
-                                    break # caso encontre 1 linha em branco para
+                                    count_blank_lines = count_blank_lines + 1
+                                    if count_blank_lines == 6:
+                                        break  # caso encontre 1 linha em branco para
                                 else:
                                     tcode = d[0]
-                                    city = District.objects.get(CD_MUN=tcode) # pega o estado da linha
+                                    name = d[1]
+                                    try:
+                                        city = District.objects.get(CD_MUN=tcode)
+                                    except District.DoesNotExist:
+                                        print("Error: District matching query does not exist: "+ tcode + " - "+ name +"")# pega o estado da linha
 
                                     headers = dataset.headers  # Get the column headers as a list
                                     headers = headers[2:]  # Remove the first two headers (tcode,tname)

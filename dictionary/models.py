@@ -15,8 +15,7 @@ class Dictionary(models.Model):
     format = models.CharField(max_length=255, null=True, blank=True,default='Int')
     new_classification_ptbr = models.CharField(max_length=255, default=None, null=True, blank=True)
     new_classification_en = models.CharField(max_length=255, default=None, null=True, blank=True)
-    comments_en = models.CharField(max_length=5000, default=None, null=True, blank=True)
-    comments_ptbr = models.CharField(max_length=5000, default=None, null=True, blank=True)
+    ranking = models.IntegerField(default=None, null=True, blank=True)
     table = models.CharField(max_length=255, default=None, null=True, blank=True)
     Spreadsheet_register = models.ForeignKey(Spreadsheet_register, on_delete=models.CASCADE, blank=True, null=True)
 
