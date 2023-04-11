@@ -9,7 +9,7 @@ from .models import Dictionary
 
 class DictionaryJsonView(View): # cria o json dos dicionários separados por classificação
     def get(self, request, *args, **kwargs):
-        dictionaries = Dictionary.objects.all()
+        dictionaries = Dictionary.objects.filter(ranking=1, table='city')
         groups = {}
         for dictionary in dictionaries:
             group_title = dictionary.new_classification_ptbr
