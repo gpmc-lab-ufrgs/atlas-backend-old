@@ -1,4 +1,6 @@
+import smtplib
 from datetime import date
+from email.message import EmailMessage
 
 import tablib
 from rest_framework.views import APIView
@@ -74,8 +76,44 @@ class UploadView(ViewSet):
                                             description_ptbr=d[4], label_en=d[5], label_ptbr=d[6], unit=d[7],
                                             format=d[8], new_classification_ptbr=d[9], new_classification_en=d[10],
                                             ranking=d[11], table=table, Spreadsheet_register=spreadsheet)
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content("Your spreadsheet was successfully imported.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
+
                             except:
                                 Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content(
+                                    "An error occurred while importing your spreadsheet. Inform the team.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
 
                 ###DATA STATE###
                 elif sheetType == 'data' and table == 'state':
@@ -109,47 +147,119 @@ class UploadView(ViewSet):
 
                                             Data_state.objects.create(state=state, dictionary=dictionary,
                                                                       value=value, Spreadsheet_register=spreadsheet)
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content("Your spreadsheet was successfully imported.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
+
                             except:
                                 Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
 
-                ###DATA STATE###
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content(
+                                    "An error occurred while importing your spreadsheet. Inform the team.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
+
+                ###DATA CITY###
                 elif sheetType == 'data' and table == 'city':
                     for dataset in imported_data.sheets():
                         if dataset.title == 'atlas':
-                            #try:
-                            #salva o registro da planilha
                             try:
-                                today = date.today()
-                                spreadsheet = Spreadsheet_register.objects.create(Sheet_name=data.name,Date=today, User=user)
-                            except Exception as e:
-                                # handle any exceptions that may occur during registration
-                                print(f"Failed to register spreadsheet: {str(e)}")
+                                #salva o registro da planilha
+                                try:
+                                    today = date.today()
+                                    spreadsheet = Spreadsheet_register.objects.create(Sheet_name=data.name,Date=today, User=user)
+                                except Exception as e:
+                                    # handle any exceptions that may occur during registration
+                                    print(f"Failed to register spreadsheet: {str(e)}")
 
-                            #salva cada célula a partir da segunda linha terceira coluna como um data no banco
-                            count_blank_lines = 0
-                            for d in dataset:
-                                if d[0] == d[1] == d[2] == d[3] == d[4] == d[5] == d[6] == None:
-                                    count_blank_lines = count_blank_lines + 1
-                                    if count_blank_lines == 6:
-                                        break  # caso encontre 1 linha em branco para
-                                else:
-                                    tcode = d[0]
-                                    name = d[1]
-                                    try:
-                                        city = District.objects.get(CD_MUN=tcode)
-                                    except District.DoesNotExist:
-                                        print("Error: District matching query does not exist: "+ tcode + " - "+ name +"")# pega o estado da linha
+                                #salva cada célula a partir da segunda linha terceira coluna como um data no banco
+                                count_blank_lines = 0
+                                for d in dataset:
+                                    if d[0] == d[1] == d[2] == d[3] == d[4] == d[5] == d[6] == None:
+                                        count_blank_lines = count_blank_lines + 1
+                                        if count_blank_lines == 6:
+                                            break  # caso encontre 1 linha em branco para
+                                    else:
+                                        tcode = d[0]
+                                        name = d[1]
+                                        try:
+                                            city = District.objects.get(CD_MUN=tcode)
+                                        except District.DoesNotExist:
+                                            print("Error: District matching query does not exist: "+ tcode + " - "+ name +"")# pega o estado da linha
 
-                                    headers = dataset.headers  # Get the column headers as a list
-                                    headers = headers[2:]  # Remove the first two headers (tcode,tname)
-                                    for h in headers:
-                                        value = d[headers.index(h)+2] # pega o valor da célula atual
-                                        dictionary = Dictionary.objects.get(name=h) # pega o dicionário cprresponte à celula atual
+                                        headers = dataset.headers  # Get the column headers as a list
+                                        headers = headers[2:]  # Remove the first two headers (tcode,tname)
+                                        for h in headers:
+                                            value = d[headers.index(h)+2] # pega o valor da célula atual
+                                            dictionary = Dictionary.objects.get(name=h) # pega o dicionário cprresponte à celula atual
 
-                                        Data_city.objects.create(city=city, dictionary=dictionary,
-                                                                  value=value, Spreadsheet_register=spreadsheet)
-                            #except:
-                                #Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
+                                            Data_city.objects.create(city=city, dictionary=dictionary,
+                                                                      value=value, Spreadsheet_register=spreadsheet)
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content("Your spreadsheet was successfully imported.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
+
+                            except:
+                                Spreadsheet_register.objects.latest('Id').delete() # se der erro, apaga o registro da planilha
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content(
+                                    "An error occurred while importing your spreadsheet. Inform the team.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
 
 
                 return Response({'msg': 'Successful', 'usr_pk': user.id, 'usr_token': str(token.key)})
