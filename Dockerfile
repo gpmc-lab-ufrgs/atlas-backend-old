@@ -36,7 +36,7 @@ RUN ./configure --with-python --with-pg --with-geos &&\
 
 WORKDIR /code
 RUN pip install --upgrade pip 
-COPY ./src/requirements.txt /code/src/
-RUN pip install -r src/requirements.txt
+COPY ./requirements.txt /code/
+RUN pip install -r requirements.txt
 
 COPY . /code/

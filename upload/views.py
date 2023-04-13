@@ -369,7 +369,7 @@ class UploadView(ViewSet):
                                                 # Save the changes to the database
                                                 my_dict.save()
 
-                                                print(f"Data city object with sector {cd_setor} and dictionary {dictionary} updated successfully.")
+                                                print(f"Data sectors object with sector {cd_setor} and dictionary {dictionary} updated successfully.")
                                             except:
 
                                                 Data_sector.objects.create(cd_setor=cd_setor, dictionary=dictionary,
