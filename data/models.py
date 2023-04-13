@@ -3,6 +3,7 @@ from django.db import models
 from dictionary.models import Dictionary
 from district.models import District
 from state.models import State
+from sectors.models import Sectors
 from upload.models import Spreadsheet_register
 
 
@@ -23,3 +24,12 @@ class Data_city(models.Model):
 
     def __str__(self):
         return self.value + " - " + self.dictionary.name + " - " + self.city.name
+
+class Data_sector(models.Model):
+    sector = models.ForeignKey(Sectors,on_delete=models.CASCADE,related_name="sector")
+    dictionary = models.ForeignKey(Dictionary,on_delete=models.CASCADE,related_name="dictionary_sector")
+    value = models.CharField(max_length=255,default=None,null=True,blank=True)
+    Spreadsheet_register = models.ForeignKey(Spreadsheet_register, on_delete=models.CASCADE, blank=True, null=True)
+
+    def __str__(self):
+        return self.value + " - " + self.dictionary.name + " - " + self.sector.name
