@@ -22,7 +22,7 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS('Successfully, file exist "%s"' % file_path))
             self.stdout.write(self.style.WARNING('processing...'))
             
-            with open(file_path, 'r') as file:
+            with open(file_path, 'r', encoding='utf-8') as file:
                 data = json.load(file)
                 for feature in data['features']:
             
