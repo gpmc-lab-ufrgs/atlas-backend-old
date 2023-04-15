@@ -21,7 +21,7 @@ class DistrictGeoJson(GeoJSONLayerView):
     properties = ['CD_MUN', 'POPULATION', 'NM_MUN', 'SIGLA_UF', 'AREA_KM2']
 
     def get_queryset(self):
-        return self.model.objects.filter(SIGLA_UF='RS') # return self.model.objects.filter(SIGLA_UF='RS') filtra apenas os municípios do RS
+        return self.model.objects.all() # return self.model.objects.filter(SIGLA_UF='RS') filtra apenas os municípios do RS
 
     def get_properties(self, feature):
         return {
