@@ -25,6 +25,7 @@ from district.models import District
 from .models import *
 from dictionary.models import *
 from data.models import *
+from sectors.models import SectorsSensus
 
 class UploadView(ViewSet):
     authentication_classes = (TokenAuthentication,)
@@ -345,8 +346,8 @@ class UploadView(ViewSet):
                                         cd_setor = d[0]
                                         #name = d[1]
                                         try:
-                                            sector = Sectors.objects.get(cd_setor=cd_setor)
-                                        except Sectors.DoesNotExist:
+                                            sector = SectorsSensus.objects.get(cd_setor=cd_setor)
+                                        except SectorsSensus.DoesNotExist:
                                             print("Error: Sector matching query does not exist: "+ cd_setor + " ")# pega o estado da linha
 
                                         headers = dataset.headers  # Get the column headers as a list

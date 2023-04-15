@@ -1,4 +1,4 @@
-from sectors.models import Sectors
+from sectors.models import Sectors,SectorsSensus
 
 import os
 import json
@@ -11,7 +11,7 @@ class Command(BaseCommand):
     help = 'Import sectors geojson data'
 
     def handle(self, *args, **options):
-        folder = 'sectors/data'
+        folder = '/home/demori/sectors/data_sectors/'
         file_paths = os.listdir(folder)
 
         for path in file_paths:
@@ -29,8 +29,7 @@ class Command(BaseCommand):
 
                     geo_type = feature['type']
 
-                    geo_id = feature['properties']["CD_SETOR"]
-                    cd_setor = feature['properties']["CD_SIT"]
+                    cd_setor = feature['properties']["CD_SETOR"]
                     cd_sit = feature['properties']["CD_SIT"]
                     nm_sit = feature['properties']["NM_SIT"]
                     cd_uf = feature['properties']["CD_UF"]
@@ -49,8 +48,7 @@ class Command(BaseCommand):
 
                     geom = GEOSGeometry(str(feature['geometry']))
 
-                    Sectors.objects.create(
-                        geo_id=geo_id,
+                    SectorsSensus.objects.create(
                         cd_setor=cd_setor,
                         cd_sit=cd_sit,
                         nm_sit=nm_sit,

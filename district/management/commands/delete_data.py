@@ -1,5 +1,6 @@
 from district.models import District
 from upload.models import Spreadsheet_register
+from sectors.models import Sectors
 
 import os
 import json
@@ -12,5 +13,6 @@ class Command(BaseCommand):
     help = 'Import district geojson data'
 
     def handle(self, *args, **options):
-        Spreadsheet_register.objects.get(Id=27).delete()
+        Sectors.objects.all().delete()
+        #Spreadsheet_register.objects.get(Id=27).delete()
         #District.objects.all().delete()
