@@ -22,8 +22,8 @@ class Sectors(models.Model):
 
 
 class SectorsSensus(models.Model):
-    id = models.BigIntegerField(primary_key=True)
-    cd_geocodi = models.CharField(max_length=255, default=None, null=True, blank=True)
+    ID = models.BigIntegerField(max_length=255, default=None, null=True, blank=True)
+    cd_geocodi = models.CharField(max_length=255,primary_key=True)
     tipo = models.CharField(max_length=255, default=None, null=True, blank=True)
     cd_geocodb = models.CharField(max_length=255, default=None, null=True, blank=True)
     nm_bairro = models.CharField(max_length=255, default=None, null=True, blank=True)
