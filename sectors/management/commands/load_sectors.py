@@ -49,7 +49,7 @@ class Command(BaseCommand):
                     geom = GEOSGeometry(str(feature['geometry']))
 
                     SectorsSensus.objects.create(
-                        id=id,
+                        ID=id,
                         cd_geocodi=cd_geocodi,
                         tipo=tipo,
                         cd_geocodb=cd_geocodb,
