@@ -29,18 +29,18 @@ class Command(BaseCommand):
 
                     geo_type = feature['type']
 
-                    cd_setor = feature['properties']["CD_SETOR"]
-                    cd_sit = feature['properties']["CD_SIT"]
-                    nm_sit = feature['properties']["NM_SIT"]
-                    cd_uf = feature['properties']["CD_UF"]
-                    nm_uf = feature['properties']["NM_UF"]
-                    sigla_uf = feature['properties']["SIGLA_UF"]
-                    cd_mun = feature['properties']["CD_MUN"]
-                    nm_mun = feature['properties']["NM_MUN"]
-                    cd_dist = feature['properties']["CD_DIST"]
-                    nm_dist = feature['properties']["CD_SETOR"]
-                    cd_subdist = feature['properties']["NM_DIST"]
-                    nm_subdist = feature['properties']["CD_SUBDIST"]
+                    id = feature['properties']["ID"]
+                    cd_geocodi = feature['properties']["CD_GEOCODI"]
+                    tipo = feature['properties']["TIPO"]
+                    cd_geocodb = feature['properties']["CD_GEOCODB"]
+                    nm_bairro = feature['properties']["NM_BAIRRO"]
+                    cd_geocods = feature['properties']["CD_GEOCODS"]
+                    nm_subdist = feature['properties']["NM_SUBDIST"]
+                    cd_geocodd = feature['properties']["CD_GEOCODD"]
+                    cd_geocodm = feature['properties']["CD_GEOCODM"]
+                    nm_municip = feature['properties']["NM_MUNICIP"]
+                    nm_micro = feature['properties']["NM_MICRO"]
+                    nm_meso = feature['properties']["NM_MESO"]
 
                     if feature['geometry']['type'] == 'Polygon':
                         feature['geometry']['type'] = 'MultiPolygon'
@@ -49,18 +49,19 @@ class Command(BaseCommand):
                     geom = GEOSGeometry(str(feature['geometry']))
 
                     SectorsSensus.objects.create(
-                        cd_setor=cd_setor,
-                        cd_sit=cd_sit,
-                        nm_sit=nm_sit,
-                        cd_uf=cd_uf,
-                        nm_uf=nm_uf,
-                        sigla_uf=sigla_uf,
-                        cd_mun=cd_mun,
-                        nm_mun=nm_mun,
-                        cd_dist=cd_dist,
-                        nm_dist=nm_dist,
-                        cd_subdist= cd_subdist,
-                        nm_subdist= nm_subdist,
+                        id=id,
+                        cd_geocodi=cd_geocodi,
+                        tipo=tipo,
+                        cd_geocodb=cd_geocodb,
+                        nm_bairro=nm_bairro,
+                        cd_geocods=cd_geocods,
+                        nm_subdist=nm_subdist,
+                        cd_geocodd=cd_geocodd,
+                        cd_geocodm=cd_geocodm,
+                        nm_municip=nm_municip,
+                        nm_micro=nm_micro,
+                        nm_meso=nm_meso,
+                        geo_type=geo_type,
                         geom=geom
                     )
 
