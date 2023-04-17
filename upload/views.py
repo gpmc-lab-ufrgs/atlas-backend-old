@@ -343,12 +343,12 @@ class UploadView(ViewSet):
                                         if count_blank_lines == 6:
                                             break  # caso encontre 6 linhas em branco para
                                     else:
-                                        cd_setor = d[0]
+                                        cd_geocodi = d[0]
                                         #name = d[1]
                                         try:
-                                            sector = SectorsSensus.objects.get(cd_setor=cd_setor)
+                                            sector = SectorsSensus.objects.get(cd_geocodi=cd_geocodi)
                                         except SectorsSensus.DoesNotExist:
-                                            print("Error: Sector matching query does not exist: "+ cd_setor + " ")# pega o estado da linha
+                                            print("Error: Sector matching query does not exist: "+ cd_geocodi + " ")# pega o estado da linha
 
                                         headers = dataset.headers  # Get the column headers as a list
                                         headers = headers[2:]  # Remove the first two headers (tcode,tname)
@@ -358,11 +358,11 @@ class UploadView(ViewSet):
 
                                             #Verifica se já existe no banco, se sim atualiza senão cria um novo registro
                                             try:
-                                                # Get a Dictionary object by name
-                                                my_dict = Data_sector.objects.get(cd_setor=cd_setor, dictionary=dictionary)
+                                                # Get a sector object
+                                                my_dict = Data_sector.objects.get(sector, dictionary=dictionary)
 
                                                 # Update the fields of the retrieved object
-                                                my_dict.cd_setor = cd_setor
+                                                my_dict.cd_geocodi = cd_geocodi
                                                 my_dict.dictionary = dictionary
                                                 my_dict.value = value
                                                 my_dict.Spreadsheet_register = spreadsheet
@@ -370,10 +370,10 @@ class UploadView(ViewSet):
                                                 # Save the changes to the database
                                                 my_dict.save()
 
-                                                print(f"Data sectors object with sector {cd_setor} and dictionary {dictionary} updated successfully.")
+                                                print(f"Data sectors object with sector {cd_geocodi} and dictionary {dictionary} updated successfully.")
                                             except:
 
-                                                Data_sector.objects.create(cd_setor=cd_setor, dictionary=dictionary,
+                                                Data_sector.objects.create(sector=sector, dictionary=dictionary,
                                                                           value=value, Spreadsheet_register=spreadsheet)
 
                                 # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
