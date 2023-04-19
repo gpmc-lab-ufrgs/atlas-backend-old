@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from rest_framework import viewsets
 
 from .models import District
@@ -23,7 +22,7 @@ class DistrictGeoJson(GeoJSONLayerView):
     properties = ['CD_MUN', 'POPULATION', 'NM_MUN', 'SIGLA_UF', 'AREA_KM2']
 
     def get_queryset(self):
-        return self.model.objects.all() # return self.model.objects.filter(Q(SIGLA_UF='RS') | Q(SIGLA_UF='RJ')) filtra apenas os municípios do RS e RJ
+        return self.model.objects.filter(Q(SIGLA_UF='RS')) # return self.model.objects.filter(Q(SIGLA_UF='RS') | Q(SIGLA_UF='RJ')) filtra apenas os municípios do RS e RJ
 
     def get_properties(self, feature):
         return {
@@ -33,9 +32,3 @@ class DistrictGeoJson(GeoJSONLayerView):
             "SIGLA_UF": feature.SIGLA_UF,
             "AREA_KM2": feature.AREA_KM2,
         }
-
-    def render_to_response(self, context, **response_kwargs):
-        geojson = super().render_to_response(context, **response_kwargs)
-        response = HttpResponse(geojson, content_type='application/json')
-        response['Content-Disposition'] = 'attachment; filename="districts.geojson"'
-        return response
