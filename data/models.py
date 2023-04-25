@@ -32,4 +32,4 @@ class Data_sector(models.Model):
     Spreadsheet_register = models.ForeignKey(Spreadsheet_register, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
-        return self.value + " - " + self.dictionary.name + " - " + self.sector.name
+        return self.value + " - " + self.dictionary.name + " - " + self.sector.cd_geocodi
