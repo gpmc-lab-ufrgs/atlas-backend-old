@@ -16,7 +16,7 @@ class DistrictDataJsonView(View):
 class DistrictData(View):
     def get(self, request):
         cd_mun = request.GET.get('cd_mun')
-        districts = District.objects.filter(CD_MUN=cd_mun)
+        districts = District.objects.filter(CD_MUN=cd_mun).select_related('dictionary_set__data_city_set')
         district_data = {}
         for district in districts:
             dictionaries = Dictionary.objects.filter(dictionary_city__city=district)
