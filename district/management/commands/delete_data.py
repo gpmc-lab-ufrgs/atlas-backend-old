@@ -13,6 +13,6 @@ class Command(BaseCommand):
     help = 'Import district geojson data'
 
     def handle(self, *args, **options):
-        SectorsSensus.objects.all().delete()
+        Spreadsheet_register.objects.get(Id=26).delete()
         #Spreadsheet_register.objects.get(Id=27).delete()
         #District.objects.all().delete()
