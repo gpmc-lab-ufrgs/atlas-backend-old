@@ -26,8 +26,14 @@ class DistrictData(View):
             for dictionary in dictionaries:
                 data_city = Data_city.objects.filter(city=district, dictionary=dictionary).values()
                 if data_city:
-                    district_data[district.CD_MUN][dictionary.name] = data_city[0]["value"]
+                    district_data[district.CD_MUN][dictionary.name] = {
+                        "value": data_city[0]["value"],
+                        "format": dictionary.format
+                    }
                 else:
-                    district_data[district.CD_MUN][dictionary.name] = None
+                    district_data[district.CD_MUN][dictionary.name] = {
+                        "value": None,
+                        "format": dictionary.format
+                    }
         return JsonResponse(district_data)
 
