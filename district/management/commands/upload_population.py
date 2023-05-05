@@ -18,7 +18,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         # Read the JSON file
-        with open('/home/demori/PycharmProjects/atlas-master/src/data/states/TO_Municipios_2020_simplified.json', 'r+') as f:
+        with open('/home/demori/PycharmProjects/atlas-master/src/data/states/RO_Municipios_2020_simplified.json', 'r+') as f:
             data = json.load(f)
 
             # Read the Excel file
