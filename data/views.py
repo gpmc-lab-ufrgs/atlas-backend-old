@@ -28,12 +28,14 @@ class DistrictData(View):
                 if data_city:
                     district_data[district.CD_MUN][dictionary.name] = {
                         "value": data_city[0]["value"],
-                        "format": dictionary.format
+                        "format": dictionary.format,
+                        "unit": dictionary.unit
                     }
                 else:
                     district_data[district.CD_MUN][dictionary.name] = {
                         "value": None,
-                        "format": dictionary.format
+                        "format": dictionary.format,
+                        "unit": dictionary.unit
                     }
         return JsonResponse(district_data)
 
