@@ -37,5 +37,5 @@ class DistrictData(View):
                         "format": dictionary.format,
                         "unit": dictionary.unit
                     }
-        return JsonResponse(district_data)
+        return JsonResponse(district_data, content_type="application/json; charset=utf-8")
 
