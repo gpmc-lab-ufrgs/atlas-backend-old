@@ -20,27 +20,23 @@ docker-compose up
 ```
 pip install -r requirements.txt
 ```
-#### 2 - Create local database
 
-```
-createdb atlas_db
-```
-#### 3 - Set migrations
+#### 2 - Set migrations
 
 ```
 python manage.py makemigrations
 ```
-#### 4 - Apply all the migrations
+#### 3 - Apply all the migrations
 
 ```
 python manage.py migrate
 ```
-#### 5 - Populate database with states data
+#### 4 - Populate database with states data
 
 ```
 python manage.py load_state 
 ```
-#### 6 - Populate database with districts data
+#### 5 - Populate database with districts data
 
 ```
 python manage.py load_dist
