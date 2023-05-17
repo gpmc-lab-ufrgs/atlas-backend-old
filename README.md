@@ -71,15 +71,16 @@ open http://localhost:8000/admin/
 ```
 
 ## How to Contribute to this project?
-See our [Contribution Guide](CONTRIBUTION.md) 🚀 
+See our [Contribution Guide](CONTRIBUTION.md)  
 
-## Contributors ✨
+## Contributors 
 
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/leosilvagomes/"><img src="https://avatars.githubusercontent.com/u/61520601?v=4" width="100px;" alt=""/><br /><sub><b>Leanordo Gomes</b></sub></a><br /><a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=LeoSilvaGomes" title="Code">💻</a> <a href="#ideas-LeoSilvaGomes" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=LeoSilvaGomes" title="Documentation">📖</a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/pulls?q=is%3Apr+assignee%3ALeoSilvaGomes+is%3Aclosed" title="Reviewed Pull Requests">👀</a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/ana-beatriz-pontes/"><img src="https://avatars.githubusercontent.com/u/47431053?v=4" width="100px;" alt=""/><br /><sub><b>Ana Beatriz Pontes</b></sub></a><br /><a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=AnaBeatrizPontes" title="Code">💻</a> <a href="#ideas-AnaBeatrizPontes" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=AnaBeatrizPontes" title="Documentation">📖</a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/pulls?q=is%3Apr+is%3Aclosed+assignee%3AAnaBeatrizPontes" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center"><a href="https://www.github.com/andredemori/"><img src="https://github.com/andredemori.png" width="100px;" alt=""/><br /><sub><b>André M. Demori</b></sub></a><br /><a href="https://github.com/gpmc-lab-ufrgs/atlas/commits?author=andredemori" title="Code"></a> <a href="#ideas-andredemori" title="Ideas, Planning, & Feedback"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas/commits?author=andredemori" title="Documentation"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas/pulls/assigned/andredemori" title="Reviewed Pull Requests"></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/leosilvagomes/"><img src="https://avatars.githubusercontent.com/u/61520601?v=4" width="100px;" alt=""/><br /><sub><b>Leanordo Gomes</b></sub></a><br /><a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=LeoSilvaGomes" title="Code"></a> <a href="#ideas-LeoSilvaGomes" title="Ideas, Planning, & Feedback"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=LeoSilvaGomes" title="Documentation"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/pulls?q=is%3Apr+assignee%3ALeoSilvaGomes+is%3Aclosed" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/ana-beatriz-pontes/"><img src="https://avatars.githubusercontent.com/u/47431053?v=4" width="100px;" alt=""/><br /><sub><b>Ana Beatriz Pontes</b></sub></a><br /><a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=AnaBeatrizPontes" title="Code"></a> <a href="#ideas-AnaBeatrizPontes" title="Ideas, Planning, & Feedback"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/commits?author=AnaBeatrizPontes" title="Documentation"></a> <a href="https://github.com/gpmc-lab-ufrgs/atlas-backend/pulls?q=is%3Apr+is%3Aclosed+assignee%3AAnaBeatrizPontes" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
