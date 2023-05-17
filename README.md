@@ -15,6 +15,13 @@ docker-compose up
 <!-- versão temporaria sem docker -->
 ### Setting the environment
 
+#### 1 - Execute docker-compose and start docker container with postgis image
+
+```
+docker-compose up -d
+sudo docker start <Container_ID>
+```
+
 #### 1 - Installing all the requirements
 
 ```
