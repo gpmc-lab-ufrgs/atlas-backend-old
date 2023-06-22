@@ -56,6 +56,7 @@ APPLICATION_APPS = [
     'sectors',
     'authentication',
     'upload',
+    'recommendation_system'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS + THIRD_PARTY_APPS

@@ -27,6 +27,16 @@ from dictionary.models import *
 from data.models import *
 from sectors.models import SectorsSensus
 
+from django.shortcuts import render
+from folium import plugins, folium
+
+from folium.plugins import MarkerCluster
+
+import pandas as pdS
+from django.views.generic import TemplateView
+import folium
+import pandas as pd
+
 class UploadView(ViewSet):
     authentication_classes = (TokenAuthentication,)
     permission_classes = (AllowAny,)
@@ -420,3 +430,111 @@ class UploadView(ViewSet):
                 return Response({'msg': 'Not active'}, status=status.HTTP_401_UNAUTHORIZED)
         else:
             return Response({'msg': 'Error'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+class CnpjView(TemplateView):
+    template_name = 'cnpj_view.html'
+
+    def cnpj(request):
+
+        locations = []
+        df = pd.read_csv('upload/files/cnpj_final.csv', nrows=500, encoding='utf-8')
+
+        locations = []
+        for _, row in df.iterrows():
+            latitude = row['latitude']
+            longitude = row['longitude']
+
+            if latitude != '' and longitude != '' and not pd.isnull(latitude) and not pd.isnull(longitude):
+                location = (float(latitude), float(longitude))
+                locations.append(location)
+
+        if locations == []:
+            center = (2.10719, -58.072611827)
+            locations.append(center)
+
+        # center the map
+        center = (-5.10719, -58.072611827)
+
+        # create a Folium map centred at the above location
+        m = folium.Map(location=center, zoom_start=5, width=1100, height=550)
+
+        cluster = MarkerCluster(locations=locations).add_to(m)
+
+        # Add custom base maps to folium
+        basemaps = {
+            'Google Maps': folium.TileLayer(
+                tiles='https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+                attr='Google',
+                name='Google Maps',
+                overlay=True,
+                control=True
+            ),
+            'Google Satellite': folium.TileLayer(
+                tiles='https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+                attr='Google',
+                name='Google Satellite',
+                overlay=True,
+                control=True
+            ),
+            'Google Terrain': folium.TileLayer(
+                tiles='https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
+                attr='Google',
+                name='Google Terrain',
+                overlay=True,
+                control=True
+            ),
+            'Google Satellite Hybrid': folium.TileLayer(
+                tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+                attr='Google',
+                name='Google Satellite',
+                overlay=True,
+                control=True
+            ),
+            'Esri Satellite': folium.TileLayer(
+                tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                attr='Esri',
+                name='Esri Satellite',
+                overlay=True,
+                control=True
+            )
+        }
+
+        # Add custom basemaps
+        basemaps['Google Maps'].add_to(m)
+        basemaps['Google Satellite Hybrid'].add_to(m)
+
+        # Add a layer control panel to the map.
+        m.add_child(folium.LayerControl())
+
+        # fullscreen
+        plugins.Fullscreen().add_to(m)
+
+        # GPS
+        plugins.LocateControl().add_to(m)
+
+        # Add the draw
+        plugins.Draw(export=True, filename='data.geojson', position='topleft', draw_options=None,
+                     edit_options=None).add_to(m)
+
+        # mouse position
+        fmtr = "function(num) {return L.Util.formatNum(num, 3) + ' º ';};"
+        plugins.MousePosition(position='bottomleft', separator=' | ', prefix="Mouse:", lat_formatter=fmtr,
+                              lng_formatter=fmtr).add_to(m)
+
+        # Add measure tool
+        plugins.MeasureControl(position='topright', primary_length_unit='meters', secondary_length_unit='miles',
+                               primary_area_unit='sqmeters', secondary_area_unit='acres').add_to(m)
+
+        map = m._repr_html_()
+
+        path_info = request.META['PATH_INFO']
+        path_info = path_info.replace('/dados/', '')
+
+        context = {
+            'header': 'cnpj_view',
+            'path_info': path_info,
+            'm': map
+        }
+
+        return render(request, 'cnpj_view.html', context)
