@@ -436,28 +436,37 @@ class CnpjView(TemplateView):
     template_name = 'cnpj_view.html'
 
     def cnpj(request):
-
+        city = ''
         locations = []
-        df = pd.read_csv('upload/files/cnpj_final.csv', nrows=500, encoding='utf-8')
+        center = (-29.366135253947203, -52.890702293659515)
+        locations.append(center)
 
-        locations = []
-        for _, row in df.iterrows():
-            latitude = row['latitude']
-            longitude = row['longitude']
+        if request.method == 'POST':
+            city = request.POST['County']
 
-            if latitude != '' and longitude != '' and not pd.isnull(latitude) and not pd.isnull(longitude):
-                location = (float(latitude), float(longitude))
-                locations.append(location)
+            city = city.lower()
 
-        if locations == []:
-            center = (2.10719, -58.072611827)
-            locations.append(center)
+            df = pd.read_excel(f'upload/files/{city}.xlsx')
+
+            for _, row in df.iterrows():
+                latitude = row['latitude']
+                longitude = row['longitude']
+                city_name = row['city_name']
+
+                if latitude != '' and longitude != '' and not pd.isnull(latitude) and not pd.isnull(
+                        longitude) and city_name == city:
+                    location = (float(latitude), float(longitude))
+                    locations.append(location)
+
+            if locations == []:
+                center = (-29.366135253947203, -52.890702293659515)
+                locations.append(center)
 
         # center the map
-        center = (-5.10719, -58.072611827)
+        center = (-29.366135253947203, -52.890702293659515)
 
         # create a Folium map centred at the above location
-        m = folium.Map(location=center, zoom_start=5, width=1100, height=550)
+        m = folium.Map(location=center, zoom_start=5, width=2100, height=1550)
 
         cluster = MarkerCluster(locations=locations).add_to(m)
 
