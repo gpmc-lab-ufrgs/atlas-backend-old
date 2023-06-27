@@ -59,7 +59,6 @@ class Recommendation_systemView(ViewSet):
                 selected_districts_list.append(d.city)
 
 
-
             # Convert selected_districts to a list of dictionaries
             districts_list = [
                 {
