@@ -22,6 +22,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny
 
 from district.models import *
+from dictionary.models import *
+from data.models import *
 
 class Recommendation_systemView(ViewSet):
     authentication_classes = (TokenAuthentication,)
@@ -29,32 +31,34 @@ class Recommendation_systemView(ViewSet):
 
     @action(detail=False, methods=['post'])
     def recommendation_system(self, request):
+        selected_districts_list = []
         if request.method == 'POST':
             # Handle POST request
+
+            # 1
             state = request.data.get('state')
             category = request.data.get('selectedCategory')
             description = request.data.get('selectedDescription')
 
-            #SLIDER VALUE
-            # O = 0
-            # 1 = R$5K
-            # 2 = R$10K
-            # 3 = R$20K
-            # 4 = R$30K
-            # 5 = R$40K
-            # 6 = R$50K
-            # 7 = R$100K
-            # 8 = R$200K
-            # 9 = R$500K+
-
             renda_cliente = request.data.get('sliderValue')
+            renda_cliente_max = int(renda_cliente) + 1
             aluguel = request.data.get('sliderValue2')
             # Process the state value or make the necessary API calls
 
             ###RECOMMENDATION ALGORITHM###
 
-            # 1 #
-            selected_districts = District.objects.filter(SIGLA_UF=state)[:4]
+            selected_districts = District.objects.filter(SIGLA_UF=state)
+
+            # 2
+            salario_medio = Dictionary.objects.get(label_ptbr='Salário médio mensal')
+            data_cities = Data_city.objects.filter(city__in=selected_districts,
+                                     dictionary=salario_medio,
+                                     value__range=(int(renda_cliente), int(renda_cliente_max)))
+
+            for d in data_cities:
+                selected_districts_list.append(d.city)
+
+
 
             # Convert selected_districts to a list of dictionaries
             districts_list = [
@@ -63,12 +67,12 @@ class Recommendation_systemView(ViewSet):
                     'CD_MUN': district.CD_MUN,
                     # Add more fields as needed
                 }
-                for district in selected_districts
+                for district in selected_districts_list
             ]
 
             # Return the result as a JSON response
             response_data = {
-                'districts': districts_list
+                'districts': districts_list[:4]
             }
             return JsonResponse(response_data)
         else:
