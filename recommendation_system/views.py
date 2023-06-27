@@ -51,12 +51,12 @@ class Recommendation_systemView(ViewSet):
 
             # 2
             salario_medio = Dictionary.objects.get(name='salario_medio_mensal_dos_trabalhadores_formais_2019')
-            #data_cities = Data_city.objects.filter(city__in=selected_districts,
-            #                         dictionary=salario_medio,
-            #                         value__range=(int(renda_cliente), int(renda_cliente_max)))
+            data_cities = Data_city.objects.filter(city__in=selected_districts,
+                                     dictionary=salario_medio,
+                                     value__range=(int(renda_cliente), int(renda_cliente_max)))
 
-            #for d in data_cities:
-            #    selected_districts_list.append(d.city)
+            for d in data_cities:
+                selected_districts_list.append(d.city)
 
 
             # Convert selected_districts to a list of dictionaries
@@ -66,7 +66,7 @@ class Recommendation_systemView(ViewSet):
                     'CD_MUN': district.CD_MUN,
                     # Add more fields as needed
                 }
-                for district in selected_districts
+                for district in selected_districts_list
             ]
 
             # Return the result as a JSON response
