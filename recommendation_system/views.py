@@ -66,7 +66,7 @@ class Recommendation_systemView(ViewSet):
                     'CD_MUN': district.CD_MUN,
                     # Add more fields as needed
                 }
-                for district in selected_districts
+                for district in selected_districts_list
             ]
 
             # Return the result as a JSON response
