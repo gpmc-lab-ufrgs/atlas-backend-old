@@ -53,7 +53,7 @@ class Recommendation_systemView(ViewSet):
             salario_medio = Dictionary.objects.get(name='salario_medio_mensal_dos_trabalhadores_formais_2019')
             data_cities = Data_city.objects.filter(city__in=selected_districts,
                                      dictionary=salario_medio,
-                                     value__range=(int(renda_cliente), int(renda_cliente_max)))
+                                     value__range=(int(renda_cliente), renda_cliente_max))
 
             for d in data_cities:
                 selected_districts_list.append(d.city)
