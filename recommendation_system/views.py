@@ -1,6 +1,8 @@
 import smtplib
 from datetime import date
 from email.message import EmailMessage
+from random import random
+
 import tablib
 from django.http import HttpResponse, JsonResponse
 from rest_framework.views import APIView
@@ -32,6 +34,8 @@ class Recommendation_systemView(ViewSet):
     @action(detail=False, methods=['post'])
     def recommendation_system(self, request):
         selected_districts_list = []
+        selected_states_list = []
+        districts = []
         if request.method == 'POST':
             # Handle POST request
 
@@ -47,13 +51,46 @@ class Recommendation_systemView(ViewSet):
 
             ###RECOMMENDATION ALGORITHM###
 
-            selected_districts = District.objects.filter(SIGLA_UF=state)
+            if state == 'BR':
+                salario_medio = Dictionary.objects.get(name='x1685_10143_2020')
+                data_state = Data_state.objects.filter(dictionary=salario_medio,
+                                                       value__range=(int(renda_cliente), renda_cliente_max))
 
-            # 2
-            salario_medio = Dictionary.objects.get(name='salario_medio_mensal_dos_trabalhadores_formais_2019')
-            data_cities = Data_city.objects.filter(city__in=selected_districts,
-                                     dictionary=salario_medio,
-                                     value__range=(int(renda_cliente), renda_cliente_max))
+                for d in data_state:
+                    selected_states_list.append(d.state)
+
+                for state in selected_states_list:
+                    districts = District.objects.filter(SIGLA_UF=state.SIGLA_UF)
+                    for d in districts:
+                        selected_districts_list.append(d)
+
+                random_list = list(selected_districts_list)  # Create a copy of the list
+                random_selection = random_list[:16]
+
+                districts_list = [
+                    {
+                        'name': district.name,
+                        'CD_MUN': district.CD_MUN,
+                        # Add more fields as needed
+                    }
+                    for district in random_selection
+                ]
+
+                # Return the result as a JSON response
+                response_data = {
+                    'districts': districts_list[:4]
+                }
+
+                return JsonResponse(response_data)
+
+            else:
+                selected_districts = District.objects.filter(SIGLA_UF=state)
+
+                # 2
+                salario_medio = Dictionary.objects.get(name='salario_medio_mensal_dos_trabalhadores_formais_2019')
+                data_cities = Data_city.objects.filter(city__in=selected_districts,
+                                         dictionary=salario_medio,
+                                         value__range=(int(renda_cliente), renda_cliente_max))
 
             for d in data_cities:
                 selected_districts_list.append(d.city)
