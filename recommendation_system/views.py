@@ -59,10 +59,19 @@ class Recommendation_systemView(ViewSet):
                 for d in data_state:
                     selected_states_list.append(d.state)
 
+                salario_medio_mun = Dictionary.objects.get(name='salario_medio_mensal_dos_trabalhadores_formais_2019')
+
                 for state in selected_states_list:
+
                     districts = District.objects.filter(SIGLA_UF=state.SIGLA_UF)
                     for d in districts:
                         selected_districts_list.append(d)
+
+                data_cities = Data_city.objects.filter(city__in=selected_districts_list,
+                                                       dictionary=salario_medio_mun,
+                                                       value__range=(int(renda_cliente), renda_cliente_max))
+                for d in data_cities:
+                    selected_districts_list.append(d.city)
 
                 random_list = list(selected_districts_list)  # Create a copy of the list
                 random_selection = random_list[:16]
