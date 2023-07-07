@@ -34,6 +34,7 @@ class Recommendation_systemView(ViewSet):
     @action(detail=False, methods=['post'])
     def recommendation_system(self, request):
         selected_districts_list = []
+        selected_districts_list_final = []
         selected_states_list = []
         districts = []
         if request.method == 'POST':
@@ -71,9 +72,9 @@ class Recommendation_systemView(ViewSet):
                                                        dictionary=salario_medio_mun,
                                                        value__range=(int(renda_cliente), renda_cliente_max))
                 for d in data_cities:
-                    selected_districts_list.append(d.city)
+                    selected_districts_list_final.append(d.city)
 
-                random_list = list(selected_districts_list)  # Create a copy of the list
+                random_list = list(selected_districts_list_final)  # Create a copy of the list
                 random_selection = random_list[:16]
 
                 districts_list = [
