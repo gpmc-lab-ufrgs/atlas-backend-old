@@ -110,7 +110,7 @@ class Recommendation_systemView(ViewSet):
             districts_list = [
                 {
                     'name': district.name,
-                    'CD_MUN': district.CD_MUN,
+                    'CD_MUN': district.CD_MUN+'/'+district.SIGLA_UF,
                     # Add more fields as needed
                 }
                 for district in selected_districts_list
