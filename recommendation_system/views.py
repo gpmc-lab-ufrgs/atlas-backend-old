@@ -79,8 +79,8 @@ class Recommendation_systemView(ViewSet):
 
                 districts_list = [
                     {
-                        'name': district.name,
-                        'CD_MUN': district.CD_MUN+'/'+district.SIGLA_UF,
+                        'name': district.name+'/'+district.SIGLA_UF,
+                        'CD_MUN': district.CD_MUN,
                         # Add more fields as needed
                     }
                     for district in random_selection
@@ -109,8 +109,8 @@ class Recommendation_systemView(ViewSet):
             # Convert selected_districts to a list of dictionaries
             districts_list = [
                 {
-                    'name': district.name,
-                    'CD_MUN': district.CD_MUN+'/'+district.SIGLA_UF,
+                    'name': district.name+'/'+district.SIGLA_UF,
+                    'CD_MUN': district.CD_MUN,
                     # Add more fields as needed
                 }
                 for district in selected_districts_list
