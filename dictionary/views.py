@@ -24,6 +24,7 @@ class DictionaryJsonView(View): # cria o json dos dicionários separados por cla
                 'format': dictionary.format,
                 'unit': dictionary.unit,
                 'type': dictionary.unit,
+                'group_title_en': dictionary.new_classification_en,
             }
             groups[group_title].append(item)
         data = []
