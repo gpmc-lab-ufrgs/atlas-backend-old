@@ -13,6 +13,7 @@ class DictionaryJsonView(View): # cria o json dos dicionários separados por cla
         groups = {}
         for dictionary in dictionaries:
             group_title = dictionary.new_classification_ptbr
+            group_title_en = dictionary.new_classification_en
             if group_title not in groups:
                 groups[group_title] = []
             item = {
@@ -28,7 +29,7 @@ class DictionaryJsonView(View): # cria o json dos dicionários separados por cla
             groups[group_title].append(item)
         data = []
         for group_title, content in groups.items():
-            group_data = {'title': group_title, 'content': content}
+            group_data = {'title': group_title, 'title_english': group_title_en,'content': content}
             data.append(group_data)
         response = JsonResponse(data, json_dumps_params={'ensure_ascii': False}, safe=False)
         response['Content-Type'] = 'application/json; charset=utf-8'
