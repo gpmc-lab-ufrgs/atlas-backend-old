@@ -11,4 +11,5 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path("", include(router.urls)),
     path('dictionary/json/', v.DictionaryJsonView.as_view(), name='dictionary_json'),
+    path('dictionary_state/json/', v.DictionaryStateJsonView.as_view(), name='dictionary_state_json'),
 ]
