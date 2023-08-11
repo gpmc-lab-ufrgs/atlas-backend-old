@@ -5,7 +5,9 @@ from django.views.generic import View
 
 from dictionary.models import Dictionary
 from district.models import District
-from .models import Data_city
+from state.models import State
+from .models import Data_city, Data_state
+
 
 class DistrictDataJsonView(View):
     def get(self, request, *args, **kwargs):
@@ -38,4 +40,30 @@ class DistrictData(View):
                         "unit": dictionary.unit
                     }
         return JsonResponse(district_data, json_dumps_params={'ensure_ascii': False})
+
+class StateData(View):
+    def get(self, request):
+        cd_uf = request.GET.get('cd_uf')
+        states = State.objects.filter(CD_UF=cd_uf)
+        state_data = {}
+        for state in states:
+            dictionaries = Dictionary.objects.filter(dictionary__state=state)
+            state_data[state.CD_UF] = {
+                "ESTADO": state.name,
+            }
+            for dictionary in dictionaries:
+                data_state = Data_state.objects.filter(state=state, dictionary=dictionary).values()
+                if data_state:
+                    state_data[state.CD_UF][dictionary.name] = {
+                        "value": data_state[0]["value"],
+                        "format": dictionary.format,
+                        "unit": dictionary.unit
+                    }
+                else:
+                    state_data[state.CD_UF][dictionary.name] = {
+                        "value": None,
+                        "format": dictionary.format,
+                        "unit": dictionary.unit
+                    }
+        return JsonResponse(state_data, json_dumps_params={'ensure_ascii': False})
 
