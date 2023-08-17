@@ -18,7 +18,7 @@ class DictionaryJsonView(View):
             ('Saúde', 'Health'),
             ('Segurança', 'Safety'),
             ('Urbanismo', 'Urbanism'),
-            ('Tecnologia e Inovação', 'Technology and Innovation'),
+            ('Tecnologia e Inovação', 'Technology and inovation '),
             ('Meio Ambiente', 'Environment'),
             ('Mobilidade', 'Mobility'),
         ]
