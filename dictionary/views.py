@@ -11,20 +11,20 @@ from .models import Dictionary
 class DictionaryJsonView(View):
     def get(self, request, *args, **kwargs):
         title_order = [
-            'Demográfica',
-            'Economia',
-            'Empreendedorismo',
-            'Educação',
-            'Saúde',
-            'Segurança',
-            'Urbanismo',
-            'Tecnologia e Inovação',
-            'Meio Ambiente',
-            'Mobilidade',
+            ('Demográfica', 'Demographic'),
+            ('Economia', 'Economy'),
+            ('Empreendedorismo', 'Entrepreneurship'),
+            ('Educação', 'Education'),
+            ('Saúde', 'Health'),
+            ('Segurança', 'Safety'),
+            ('Urbanismo', 'Urbanism'),
+            ('Tecnologia e Inovação', 'Technology and Innovation'),
+            ('Meio Ambiente', 'Environment'),
+            ('Mobilidade', 'Mobility'),
         ]
 
         dictionaries = Dictionary.objects.filter(ranking=1, table='city')
-        groups = {title: {'title_english': None, 'content': []} for title in title_order}
+        groups = {title_ptbr: {'title_english': title_en, 'content': []} for title_ptbr, title_en in title_order}
 
         for dictionary in dictionaries:
             group_title = dictionary.new_classification_ptbr
@@ -43,14 +43,14 @@ class DictionaryJsonView(View):
                 groups[group_title]['content'].append(item)
 
         data = []
-        for group_title in title_order:
-            if groups[group_title]['content']:
-                group_data = {'title': group_title, **groups[group_title]}
-                data.append(group_data)
+        for group_title_ptbr, group_data in groups.items():
+            if group_data['content']:
+                data.append({'title_ptbr': group_title_ptbr, **group_data})
 
         response = JsonResponse(data, json_dumps_params={'ensure_ascii': False}, safe=False)
         response['Content-Type'] = 'application/json; charset=utf-8'
         return response
+
 
 class DictionaryStateJsonView(View):
     def get(self, request, *args, **kwargs):
