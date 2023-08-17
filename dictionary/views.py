@@ -54,28 +54,38 @@ class DictionaryJsonView(View):
 
 class DictionaryStateJsonView(View):
     def get(self, request, *args, **kwargs):
+        title_order = [
+            ('Demográfica', 'Demographic'),
+            ('Economia', 'Economy'),
+            ('Empreendedorismo', 'Entrepreneurship'),
+            ('Urbanismo', 'Urbanism'),
+            ('Tecnologia e Inovação', 'Technology and inovation'),
+        ]
+
         dictionaries = Dictionary.objects.filter(ranking=1, table='state')
-        groups = {}
+        groups = {title: {'title_english': title_en, 'content': []} for title, title_en in title_order}
+
         for dictionary in dictionaries:
             group_title = dictionary.new_classification_ptbr
             group_title_en = dictionary.new_classification_en
-            if group_title not in groups:
-                groups[group_title] = {'title_english': group_title_en, 'content': []}
-            item = {
-                'label': dictionary.name,
-                'title': dictionary.label_ptbr,
-                'title_en': dictionary.label_en,
-                'description': f"{dictionary.description_ptbr} - {dictionary.agency}",
-                'description_en': f"{dictionary.description_en} - {dictionary.agency}",
-                'format': dictionary.format,
-                'unit': dictionary.unit,
-                'type': dictionary.unit,
-            }
-            groups[group_title]['content'].append(item)
+            if group_title in groups:
+                item = {
+                    'label': dictionary.name,
+                    'title': dictionary.label_ptbr,
+                    'title_en': dictionary.label_en,
+                    'description': f"{dictionary.description_ptbr} - {dictionary.agency}",
+                    'description_en': f"{dictionary.description_en} - {dictionary.agency}",
+                    'format': dictionary.format,
+                    'unit': dictionary.unit,
+                    'type': dictionary.unit,
+                }
+                groups[group_title]['content'].append(item)
+
         data = []
-        for group_title, content in groups.items():
-            group_data = {'title': group_title, **content}
-            data.append(group_data)
+        for group_title_ptbr, group_data in groups.items():
+            if group_data['content']:
+                data.append({'title': group_title_ptbr, **group_data})
+
         response = JsonResponse(data, json_dumps_params={'ensure_ascii': False}, safe=False)
         response['Content-Type'] = 'application/json; charset=utf-8'
         return response
