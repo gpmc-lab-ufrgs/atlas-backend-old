@@ -45,7 +45,7 @@ class DictionaryJsonView(View):
         data = []
         for group_title_ptbr, group_data in groups.items():
             if group_data['content']:
-                data.append({'title_ptbr': group_title_ptbr, **group_data})
+                data.append({'title': group_title_ptbr, **group_data})
 
         response = JsonResponse(data, json_dumps_params={'ensure_ascii': False}, safe=False)
         response['Content-Type'] = 'application/json; charset=utf-8'
