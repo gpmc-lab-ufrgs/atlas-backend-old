@@ -24,7 +24,7 @@ class DictionaryJsonView(View):
         ]
 
         dictionaries = Dictionary.objects.filter(ranking=1, table='city')
-        groups = {title_ptbr: {'title_english': title_en, 'content': []} for title_ptbr, title_en in title_order}
+        groups = {title: {'title_english': title_en, 'content': []} for title, title_en in title_order}
 
         for dictionary in dictionaries:
             group_title = dictionary.new_classification_ptbr
