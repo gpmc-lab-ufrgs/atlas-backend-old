@@ -424,6 +424,93 @@ class UploadView(ViewSet):
                                     smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
                                     smtp.send_message(msg)
 
+                ###DATA cnaes###
+                elif sheetType == 'data' and table == 'cnaes':
+                    for dataset in imported_data.sheets():
+                        if dataset.title == 'atlas':
+                            try:
+                                # salva o registro da planilha
+                                try:
+                                    today = date.today()
+                                    spreadsheet = Spreadsheet_register.objects.create(Sheet_name=data.name,
+                                                                                      Date=today, User=user)
+                                except Exception as e:
+                                    # handle any exceptions that may occur during registration
+                                    print(f"Failed to register spreadsheet: {str(e)}")
+
+                                # salva cada célula a partir da segunda linha terceira coluna como um data no banco
+                                count_blank_lines = 0
+                                for d in dataset:
+                                    if d[0] == d[1] == d[2] == d[3] == None:
+                                        count_blank_lines = count_blank_lines + 1
+                                        if count_blank_lines == 6:
+                                            break  # caso encontre 6 linhas em branco para
+                                    else:
+                                        cnae = d[0]
+                                        descricao = d[1]
+                                        cod_setor = d[2]
+                                        nome_setor = d[3]
+                                        try:
+                                            cnae = Cnae.objects.get(cnae=cnae)
+
+                                            cnae.descricao = descricao
+                                            cnae.cod_setor = cod_setor
+                                            cnae.nome_setor = nome_setor
+                                            cnae.Spreadsheet_register = spreadsheet
+
+                                            cnae.save()
+                                        except Cnae.DoesNotExist:
+                                            print(
+                                                "Error: cnae matching query does not exist: " + str(cnae) + " ")  # pega o estado da linha
+
+                                            Cnae.objects.create(cnae=cnae,
+                                                               descricao=descricao,
+                                                               cod_setor=cod_setor,
+                                                               nome_setor=nome_setor,
+                                                               Spreadsheet_register=spreadsheet)
+
+                                # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                                # CONFIGURAR E-MAIL E SENHA
+                                EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                                EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                                # CRIAR UM E-MAIL
+                                msg = EmailMessage()
+                                msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                                msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                                msg['To'] = user.email
+                                msg.set_content(
+                                    "Your spreadsheet " + data.name + " was successfully imported.")
+
+                                # ENVIAR UM E-MAIL
+                                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                    smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                    smtp.send_message(msg)
+
+                            except:
+                                Spreadsheet_register.objects.latest(
+                                    'Id').delete()  # se der erro, apaga o registro da planilha
+
+
+                            # ENVIAR E-MAIL COM O RESULTADO APÓS O TÉRMINO
+                            # CONFIGURAR E-MAIL E SENHA
+                            EMAIL_ADRESS = 'atlas.aws.ufrgs@gmail.com'
+                            EMAIL_PASSWORD = 'cbcdjyoegauwoock'
+
+                            # CRIAR UM E-MAIL
+                            msg = EmailMessage()
+                            msg['Subject'] = 'ATLAS - IMPORT RESULT'
+                            msg['From'] = 'atlas.aws.ufrgs@gmail.com'
+                            msg['To'] = user.email
+                            msg.set_content(
+                                "An error occurred while importing your spreadsheet " + data.name + ". Inform the team.")
+
+                            # ENVIAR UM E-MAIL
+                            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+                                smtp.login(EMAIL_ADRESS, EMAIL_PASSWORD)
+                                smtp.send_message(msg)
+
+
 
                 return Response({'msg': 'Successful', 'usr_pk': user.id, 'usr_token': str(token.key)})
             else:

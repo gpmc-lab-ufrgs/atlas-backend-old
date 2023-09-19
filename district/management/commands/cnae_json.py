@@ -11,13 +11,13 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # Get the absolute path to the Excel file
         current_directory = os.path.dirname(os.path.abspath(__file__))
-        excel_file = os.path.join(current_directory, 'tabela-cnaes_en.xlsx')
+        excel_file = os.path.join(current_directory, 'tabela-cnaes.xlsx')
 
         # Read the Excel file
         df = pd.read_excel(excel_file)
 
         # Group the data by 'NOME SETOR'
-        grouped = df.groupby('SECTOR NAME')
+        grouped = df.groupby('NOME SETOR')
 
         # Create an empty dictionary to store the JSON data
         json_data = {}

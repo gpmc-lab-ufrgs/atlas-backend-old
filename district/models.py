@@ -22,3 +22,4 @@ class District(models.Model):
             "SIGLA_UF": self.SIGLA_UF,
             "AREA_KM2": self.AREA_KM2,
         }
+

@@ -7,3 +7,4 @@ class DistrictAdmin(OSMGeoAdmin):
     default_lat: 7495000
     default_lng: 1400000
     default_zoom: 12
+
